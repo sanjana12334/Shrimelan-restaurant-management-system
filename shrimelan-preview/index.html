@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>ShriMelan — Savor the Taste of Perfection</title>
+<meta name="description" content="Order authentic vegetarian South Indian, Chinese, Tandoor & North Indian food from ShriMelan, Bhopal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ TOP ANNOUNCEMENT BAR ============ -->
+<div class="topbar">
+  <span>🌿 100% Pure Vegetarian Kitchen</span>
+  <span class="topbar-dot">•</span>
+  <span id="topbar-hours">Open 11:00 AM – 11:00 PM</span>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="#home" class="brand" data-nav="home">
+      <img src="images/logo.png" alt="ShriMelan" class="brand-logo" onerror="this.style.display='none'">
+      <span class="brand-name">Shri<em>Melan</em></span>
+    </a>
+    <nav class="main-nav">
+      <a href="#home" data-nav="home">Home</a>
+      <a href="#menu" data-nav="menu">Menu</a>
+      <a href="#story" data-nav="home">Our Story</a>
+      <a href="#gallery" data-nav="home">Gallery</a>
+      <a href="#visit" data-nav="home">Visit Us</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#staff" class="staff-link" data-nav="staff">Staff Portal</a>
+      <button class="btn btn-primary btn-sm" data-nav="menu">Order Now</button>
+      <button class="cart-pill" id="cart-pill" aria-label="Open cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 3h2l2.4 12.4a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 2-1.6L22 8H6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="21" r="1.4" fill="currentColor"/><circle cx="17.5" cy="21" r="1.4" fill="currentColor"/></svg>
+        <span class="cart-pill-count" id="cart-pill-count">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#home" data-nav="home">Home</a>
+    <a href="#menu" data-nav="menu">Menu</a>
+    <a href="#story" data-nav="home">Our Story</a>
+    <a href="#gallery" data-nav="home">Gallery</a>
+    <a href="#visit" data-nav="home">Visit Us</a>
+    <a href="#staff" data-nav="staff">Staff Portal</a>
+  </div>
+</header>
+
+<main id="app-root">
+
+<!-- ============ VIEW: HOME ============ -->
+<section class="view" id="view-home" data-view="home">
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-blob"></div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow">Welcome to ShriMelan</span>
+        <h1>Savor the Taste<br> of <span class="text-accent">Perfection.</span></h1>
+        <p class="hero-sub">Authentic vegetarian South Indian, Tandoor, Chinese &amp; North Indian food — made fresh to order, for dine-in, pickup or delivery.</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary btn-lg" data-nav="menu">Explore Menu</button>
+          <button class="btn btn-outline btn-lg" data-nav="menu" data-menu-scroll="1">Order Now</button>
+        </div>
+        <div class="hero-stats">
+          <div><strong>4.9★</strong><span>1,200+ Reviews</span></div>
+          <div><strong>153</strong><span>Menu Items</span></div>
+          <div><strong>13</strong><span>Curated Categories</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card hero-card-main">
+          <img src="images/Melan-special-paneer.webp" alt="Melan Special Paneer">
+          <div class="hero-card-label">
+            <span class="veg-dot"></span> Melan Special Paneer
+          </div>
+        </div>
+        <div class="hero-float hero-float-1">
+          <span class="hero-float-icon">⭐</span>
+          <div><strong>4.9 Rating</strong><small>1,200+ Reviews</small></div>
+        </div>
+        <div class="hero-float hero-float-2">
+          <span class="hero-float-icon">🔥</span>
+          <div><strong>Hot &amp; Fresh</strong><small>Made on Order</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BESTSELLERS -->
+  <section class="section" id="bestsellers">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Fan Favourites</span>
+          <h2>Our Bestsellers</h2>
+        </div>
+        <button class="link-arrow" data-nav="menu">See full menu →</button>
+      </div>
+      <div class="scroll-row" id="bestseller-row"></div>
+    </div>
+  </section>
+
+  <!-- CATEGORY NAV -->
+  <section class="section section-tint" id="categories">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Browse</span>
+          <h2>Explore by Category</h2>
+        </div>
+      </div>
+      <div class="category-grid" id="category-grid"></div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="section story" id="story">
+    <div class="container story-inner">
+      <div class="story-visual">
+        <img src="images/Special-thali.avif" alt="ShriMelan Special Thali">
+      </div>
+      <div class="story-copy">
+        <span class="eyebrow">Our Story</span>
+        <h2>Cooked with heart, served with pride.</h2>
+        <p>ShriMelan started with one simple idea — bring restaurant-quality vegetarian food, made the traditional way, to every table in Bhopal. From crisp South Indian dosas to slow-simmered North Indian gravies, sizzling tandoor breads and wok-fresh Chinese, every dish is prepared fresh to order using time-tested recipes and quality ingredients.</p>
+        <p>No shortcuts, no compromises — just honest, flavourful food and warm hospitality, whether you're dining in, picking up, or ordering home delivery.</p>
+        <div class="story-badges">
+          <div class="story-badge"><span class="veg-dot lg"></span> 100% Vegetarian</div>
+          <div class="story-badge">🔥 Fresh, Made to Order</div>
+          <div class="story-badge">⭐ 4.9 Average Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section section-tint" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">A Taste, In Pictures</span>
+          <h2>Food Gallery</h2>
+        </div>
+      </div>
+      <div class="gallery-grid" id="gallery-grid"></div>
+    </div>
+  </section>
+
+  <!-- VISIT US -->
+  <section class="section" id="visit">
+    <div class="container visit-inner">
+      <div class="visit-card">
+        <span class="eyebrow">Visit Us</span>
+        <h2>Location &amp; Hours</h2>
+        <ul class="visit-list">
+          <li><span class="visit-icon">📍</span><span id="visit-address"></span></li>
+          <li><span class="visit-icon">🕒</span><span id="visit-hours"></span></li>
+          <li><span class="visit-icon">📞</span><span id="visit-phone"></span></li>
+          <li><span class="visit-icon">✉️</span><span id="visit-email"></span></li>
+        </ul>
+        <div class="visit-actions">
+          <a id="whatsapp-btn" class="btn btn-whatsapp" href="#" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.45 1.33 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm0 18.2c-1.5 0-2.97-.4-4.25-1.16l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.26-4.37c0-4.53 3.69-8.22 8.24-8.22 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.22-8.18 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.4-.12-.56.13-.17.25-.65.81-.79.97-.15.17-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.66-1.23-1.46-1.37-1.71-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.36-.77-1.86-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.86-.87 2.09 0 1.23.9 2.42 1.02 2.58.12.17 1.77 2.72 4.29 3.81.6.26 1.07.42 1.44.53.6.19 1.15.17 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29z"/></svg>
+            WhatsApp Us
+          </a>
+          <a id="call-btn" class="btn btn-outline" href="#">Call Restaurant</a>
+        </div>
+      </div>
+      <div class="visit-map" id="visit-map">
+        <img src="images/gourmet_plate.png" alt="ShriMelan" onerror="this.style.opacity=0">
+        <div class="visit-map-overlay">
+          <strong>ShriMelan</strong>
+          <span>BHEL, Bhopal · Madhya Pradesh</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ============ VIEW: MENU ============ -->
+<section class="view" id="view-menu" data-view="menu" style="display:none;">
+  <div class="container menu-page">
+    <div class="menu-page-head">
+      <div>
+        <span class="eyebrow">Curated Menu</span>
+        <h2>Order Fresh, Made-to-Order Food</h2>
+        <p class="muted">153 dishes across 13 categories — all 100% vegetarian.</p>
+      </div>
+      <div class="search-bar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="m20 20-3-3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <input type="text" id="menu-search" placeholder="Search dishes, e.g. Dosa, Paneer, Noodles...">
+      </div>
+    </div>
+
+    <div class="category-tabs" id="category-tabs"></div>
+
+    <div class="menu-grid" id="menu-grid"></div>
+    <p class="empty-search" id="empty-search" style="display:none;">No dishes match your search. Try another keyword.</p>
+  </div>
+</section>
+
+<!-- ============ VIEW: CHECKOUT ============ -->
+<section class="view" id="view-checkout" data-view="checkout" style="display:none;">
+  <div class="container checkout-page">
+    <button class="back-link" data-nav="menu">← Back to Menu</button>
+    <h2>Checkout</h2>
+    <div class="checkout-grid">
+      <form class="checkout-form" id="checkout-form">
+        <div class="form-card">
+          <h3>Your Details</h3>
+          <label>Full Name<input type="text" id="ck-name" required placeholder="e.g. Rudra Pathade"></label>
+          <label>Mobile Number<input type="tel" id="ck-mobile" required pattern="[0-9+ ]{10,15}" placeholder="e.g. 98765 43210"></label>
+        </div>
+
+        <div class="form-card">
+          <h3>Order Type</h3>
+          <div class="order-type-group" id="order-type-group">
+            <label class="order-type-opt"><input type="radio" name="order-type" value="Dine-in" checked><span>🍽️ Dine-in</span></label>
+            <label class="order-type-opt"><input type="radio" name="order-type" value="Pickup"><span>🥡 Pickup</span></label>
+            <label class="order-type-opt"><input type="radio" name="order-type" value="Delivery"><span>🛵 Delivery</span></label>
+          </div>
+
+          <div id="field-table" class="conditional-field">
+            <label>Table Number<input type="text" id="ck-table" placeholder="e.g. 7"></label>
+          </div>
+          <div id="field-delivery" class="conditional-field" style="display:none;">
+            <label>Delivery Address<textarea id="ck-address" rows="2" placeholder="House / flat no., street, area"></textarea></label>
+            <label>Landmark<input type="text" id="ck-landmark" placeholder="e.g. Near BHEL Gate 2"></label>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <h3>Order Note <span class="muted">(optional)</span></h3>
+          <label>Anything we should know?<textarea id="ck-note" rows="2" placeholder="e.g. Please pack cutlery, ring the bell twice..."></textarea></label>
+        </div>
+
+        <div class="payment-note">
+          <span class="payment-note-icon">💵</span>
+          <div>
+            <strong>Pay at the counter</strong>
+            <p>Payment will be collected at the restaurant counter. We do not accept online payment on this site.</p>
+          </div>
+        </div>
+      </form>
+
+      <aside class="order-summary-card">
+        <h3>Order Summary</h3>
+        <div id="checkout-items"></div>
+        <div class="summary-line"><span>Subtotal</span><span id="ck-subtotal">₹0</span></div>
+        <div class="summary-line"><span>Taxes (5%)</span><span id="ck-tax">₹0</span></div>
+        <div class="summary-line total"><span>Total Payable</span><span id="ck-total">₹0</span></div>
+        <button class="btn btn-primary btn-lg btn-block" id="place-order-btn" type="submit" form="checkout-form">Place Order — Pay at Counter</button>
+        <p class="muted small center">You'll get an order number to track your order.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIEW: CONFIRMATION ============ -->
+<section class="view" id="view-confirmation" data-view="confirmation" style="display:none;">
+  <div class="container confirmation-page">
+    <div class="confirm-head">
+      <div class="confirm-check">✓</div>
+      <h2>Order Placed!</h2>
+      <p class="muted">Your order has been sent to the kitchen.</p>
+    </div>
+
+    <div class="confirm-grid">
+      <div class="confirm-main">
+        <div class="form-card">
+          <div class="confirm-meta">
+            <div><span class="muted small">Order Number</span><strong id="conf-order-number">—</strong></div>
+            <div><span class="muted small">Payment Status</span><strong class="badge badge-pending" id="conf-payment-status">Pending Counter Payment</strong></div>
+          </div>
+          <div class="confirm-meta">
+            <div><span class="muted small">Order Type</span><strong id="conf-order-type">—</strong></div>
+            <div><span class="muted small">Placed For</span><strong id="conf-name">—</strong></div>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <h3>Order Status</h3>
+          <div class="status-timeline" id="status-timeline"></div>
+        </div>
+
+        <div class="form-card">
+          <h3>Your Items</h3>
+          <div id="conf-items"></div>
+          <div class="summary-line total"><span>Total Paid at Counter</span><span id="conf-total">₹0</span></div>
+        </div>
+      </div>
+
+      <aside class="confirm-side">
+        <div class="form-card center-card">
+          <p class="muted">Thank you for ordering from</p>
+          <div class="brand-name-lg">Shri<em>Melan</em></div>
+          <button class="btn btn-primary btn-block" id="reorder-btn">Reorder These Items</button>
+          <button class="btn btn-outline btn-block" data-nav="menu">Browse Menu Again</button>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIEW: STAFF PORTAL (teaser) ============ -->
+<section class="view" id="view-staff" data-view="staff" style="display:none;">
+  <div class="staff-login-wrap">
+    <div class="staff-login-card">
+      <div class="staff-lock">🔒</div>
+      <h2>ShriMelan Staff Portal</h2>
+       <p class="muted">Restricted access for authenticated ShriMelan administrators only.</p>
+      <form id="staff-login-form">
+        <label>Staff Email<input type="email" required placeholder="name@shrimelan.staff"></label>
+        <label>Password<input type="password" required placeholder="••••••••"></label>
+        <button class="btn btn-primary btn-block" type="submit">Sign In</button>
+      </form>
+       <p class="muted small center" style="margin-top:14px;">This is a design preview of the authenticated admin portal — see ARCHITECTURE.md.</p>
+      <button class="back-link" data-nav="home" style="margin-top:8px;">← Back to Customer Site</button>
+    </div>
+  </div>
+</section>
+<!-- ============ VIEW: STAFF DASHBOARD ============ -->
+<section
+  class="view"
+  id="view-staff-dashboard"
+  data-view="staff-dashboard"
+  style="display:none;"
+>
+  <div class="staff-dashboard">
+
+    <div class="staff-dashboard-header">
+      <div>
+        <h2>ShriMelan Staff Dashboard</h2>
+        <p class="muted">
+           Manage orders, counter payments and restaurant activity.
+        </p>
+      </div>
+
+      <button
+        class="btn btn-outline"
+        id="staff-logout-btn"
+      >
+        Logout
+      </button>
+    </div>
+
+    <div class="staff-dashboard-grid">
+
+      <div class="staff-dashboard-card">
+        <span>📦</span>
+        <h3>Orders</h3>
+        <p>View and manage customer orders.</p>
+        <button class="btn btn-primary" id="staff-orders-btn">
+          View Orders
+        </button>
+      </div>
+
+      <div class="staff-dashboard-card">
+        <span>💰</span>
+        <h3>Counter Payments</h3>
+        <p>Record counter payment after the customer pays.</p>
+        <button class="btn btn-primary">
+          Payment Queue
+        </button>
+      </div>
+
+      <div class="staff-dashboard-card">
+        <span>🍽️</span>
+        <h3>Menu</h3>
+        <p>Manage restaurant menu items.</p>
+        <button class="btn btn-primary">
+          Menu Management
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ============ STICKY MOBILE CART BAR ============ -->
+<div class="sticky-cart" id="sticky-cart" style="display:none;">
+  <div class="sticky-cart-inner">
+    <div class="sticky-cart-info">
+      <span id="sticky-cart-count">0 items</span>
+      <strong id="sticky-cart-total">₹0</strong>
+    </div>
+    <button class="btn btn-primary" id="sticky-cart-btn">View Cart →</button>
+  </div>
+</div>
+
+<!-- ============ DISH MODAL ============ -->
+<div class="modal-backdrop" id="dish-modal-backdrop">
+  <div class="modal dish-modal" id="dish-modal">
+    <button class="modal-close" id="dish-modal-close">×</button>
+    <div class="dish-modal-img">
+      <img id="dm-image" src="" alt="">
+      <span class="badge badge-bestseller" id="dm-bestseller" style="display:none;">🔥 Bestseller</span>
+    </div>
+    <div class="dish-modal-body">
+      <div class="dish-modal-title-row">
+        <span class="veg-dot" id="dm-vegdot"></span>
+        <h3 id="dm-name">Dish Name</h3>
+      </div>
+      <div class="dish-modal-meta">
+        <span class="rating">⭐ <span id="dm-rating">4.5</span></span>
+        <span id="dm-category" class="muted"></span>
+      </div>
+      <p class="dish-modal-desc" id="dm-desc"></p>
+
+      <div class="dish-modal-price" id="dm-price">₹0</div>
+
+      <div class="dish-modal-section">
+        <h4>Add-ons &amp; Customization</h4>
+        <div class="addon-list" id="dm-addons"></div>
+      </div>
+
+      <div class="dish-modal-section">
+        <h4>Special Instructions <span class="muted">(optional)</span></h4>
+        <input type="text" id="dm-instructions" placeholder='e.g. "less spicy", "no onion"'>
+      </div>
+
+      <div class="dish-modal-footer">
+        <div class="qty-stepper">
+          <button id="dm-qty-minus">−</button>
+          <span id="dm-qty">1</span>
+          <button id="dm-qty-plus">+</button>
+        </div>
+        <button class="btn btn-primary btn-lg" id="dm-add-btn">Add to Cart · <span id="dm-add-price">₹0</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="drawer-backdrop" id="cart-backdrop">
+  <div class="drawer cart-drawer" id="cart-drawer">
+    <div class="drawer-head">
+      <h3>Your Cart</h3>
+      <button class="modal-close" id="cart-close">×</button>
+    </div>
+    <div class="drawer-body" id="cart-body">
+      <!-- empty state or items rendered here -->
+    </div>
+    <div class="drawer-footer" id="cart-footer" style="display:none;">
+      <div class="summary-line"><span>Subtotal</span><span id="cart-subtotal">₹0</span></div>
+      <div class="summary-line"><span>Taxes (5%)</span><span id="cart-tax">₹0</span></div>
+      <div class="summary-line total"><span>Total</span><span id="cart-total">₹0</span></div>
+      <button class="btn btn-primary btn-lg btn-block" id="cart-checkout-btn">Proceed to Checkout</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="brand-name-lg">Shri<em>Melan</em></div>
+      <p class="muted">Savor the Taste of Perfection. Authenticity, quality and hospitality in every serve.</p>
+      <div class="footer-social">
+        <span class="social-dot">f</span>
+        <span class="social-dot">in</span>
+        <span class="social-dot">◎</span>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="#home" data-nav="home">Home</a>
+      <a href="#menu" data-nav="menu">Our Menu</a>
+      <a href="#story" data-nav="home">Our Story</a>
+      <a href="#visit" data-nav="home">Visit Us</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <span id="footer-address" class="muted"></span>
+      <span id="footer-phone" class="muted"></span>
+      <span id="footer-email" class="muted"></span>
+    </div>
+    <div class="footer-col">
+      <h4>Policies</h4>
+      <a href="#" data-policy="privacy">Privacy Policy</a>
+      <a href="#" data-policy="terms">Terms of Service</a>
+      <a href="#" data-policy="cancellation">Cancellation Policy</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 ShriMelan. All rights reserved.</span>
+    <span class="muted small">Design preview — not affiliated with any third-party ordering platform.</span>
+  </div>
+</footer>
+
+<!-- ============ POLICY MODAL ============ -->
+<div class="modal-backdrop" id="policy-modal-backdrop">
+  <div class="modal policy-modal">
+    <button class="modal-close" id="policy-modal-close">×</button>
+    <h3 id="policy-title"></h3>
+    <div id="policy-body" class="policy-body"></div>
+  </div>
+</div>
+
+<!-- ============ TOAST ============ -->
+<div class="toast" id="toast"></div>
+
+<script id="menu-data" type="application/json">{"restaurant": {"name": "ShriMelan", "tagline": "Savor the Taste of Perfection.", "type": "Fast Food & Restaurant (Pure Vegetarian)", "address": "29, Santosi Vihar, Narela Shankari, BHEL, Bhopal, Madhya Pradesh", "phones": ["+91 91312 55728", "+91 89629 42446"], "whatsapp": "+919131255728", "email": "atulpa006@gmail.com", "hours": "11:00 AM \u2013 11:00 PM, all days", "rating": 4.9, "reviews": 1200}, "categories": ["South Indian", "Snacks", "Burgers and Sandwiches", "Chinese", "Fried Rice and Noodles", "Drinks (Beverages)", "Main Course", "Rice and Biryani", "Breads", "Tandoor Se", "Combos", "Accompaniments", "Thali"], "items": [{"id": "SM-001", "name": "Melan Special Dosa", "category": "South Indian", "price": 120, "description": "Crisp, golden melan special dosa served hot off the tawa with sambar and chutney.", "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500", "rating": 4.5, "veg": true, "bestseller": true, "available": true}, {"id": "SM-002", "name": "Shahi Dosa", "category": "South Indian", "price": 100, "description": "Crisp, golden shahi dosa served hot off the tawa with sambar and chutney.", "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-003", "name": "Idli", "category": "South Indian", "price": 40, "description": "Soft steamed rice cakes served with sambar and coconut chutney.", "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-004", "name": "Idli Fry", "category": "South Indian", "price": 50, "description": "Soft steamed rice cakes served with sambar and coconut chutney.", "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-005", "name": "Plain Dosa", "category": "South Indian", "price": 50, "description": "Crisp, golden plain dosa served hot off the tawa with sambar and chutney.", "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-006", "name": "Masala Dosa", "category": "South Indian", "price": 60, "description": "Crisp, golden masala dosa served hot off the tawa with sambar and chutney.", "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500", "rating": 4.5, "veg": true, "bestseller": true, "available": true}, {"id": "SM-007", "name": "Paper Plain Dosa", "category": "South Indian", "price": 70, "description": "Crisp, golden paper plain dosa served hot off the tawa with sambar and chutney.", "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-008", "name": "Paper Masala Dosa", "category": "South Indian", "price": 80, "description": "Crisp, golden paper masala dosa served hot off the tawa with sambar and chutney.", "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-009", "name": "Rava Plain Dosa", "category": "South Indian", "price": 70, "description": "Crisp, golden rava plain dosa served hot off the tawa with sambar and chutney.", "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-010", "name": "Rava Masala Dosa", "category": "South Indian", "price": 80, "description": "Crisp, golden rava masala dosa served hot off the tawa with sambar and chutney.", "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-011", "name": "Cutting Masala Dosa", "category": "South Indian", "price": 80, "description": "Crisp, golden cutting masala dosa served hot off the tawa with sambar and chutney.", "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-012", "name": "Mysore Masala Dosa", "category": "South Indian", "price": 70, "description": "Crisp, golden mysore masala dosa served hot off the tawa with sambar and chutney.", "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-013", "name": "Paneer Plain Dosa", "category": "South Indian", "price": 80, "description": "Crisp, golden paneer plain dosa served hot off the tawa with sambar and chutney.", "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-014", "name": "Paneer Masala Dosa", "category": "South Indian", "price": 90, "description": "Crisp, golden paneer masala dosa served hot off the tawa with sambar and chutney.", "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-015", "name": "Tomato Uttapam", "category": "Snacks", "price": 60, "description": "Thick pan-fried tomato uttapam topped generously and served with chutney.", "image": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-016", "name": "Onion Uttapam", "category": "Snacks", "price": 70, "description": "Thick pan-fried onion uttapam topped generously and served with chutney.", "image": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-017", "name": "Veg Uttapam", "category": "Snacks", "price": 80, "description": "Thick pan-fried veg uttapam topped generously and served with chutney.", "image": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-018", "name": "Chole Bhature", "category": "Snacks", "price": 100, "description": "Spiced chickpeas simmered in a thick, tangy onion-tomato gravy.", "image": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500", "rating": 4.5, "veg": true, "bestseller": true, "available": true}, {"id": "SM-019", "name": "Veg Sandwich", "category": "Burgers and Sandwiches", "price": 60, "description": "Grilled to order with a crisp golden crust and a melty, generous filling.", "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-020", "name": "Veg Cheese Sandwich", "category": "Burgers and Sandwiches", "price": 70, "description": "Grilled to order with a crisp golden crust and a melty, generous filling.", "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-021", "name": "Veg Double Cheese Sandwich", "category": "Burgers and Sandwiches", "price": 80, "description": "Grilled to order with a crisp golden crust and a melty, generous filling.", "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-022", "name": "Veg Corn Cheese Sandwich", "category": "Burgers and Sandwiches", "price": 80, "description": "Grilled to order with a crisp golden crust and a melty, generous filling.", "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-023", "name": "Veg Paneer Cheese Sandwich", "category": "Burgers and Sandwiches", "price": 100, "description": "Grilled to order with a crisp golden crust and a melty, generous filling.", "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-024", "name": "Veg Burger", "category": "Burgers and Sandwiches", "price": 60, "description": "A toasted bun packed with a crisp patty, fresh veggies and house sauce.", "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-025", "name": "Veg Cheese Burger", "category": "Burgers and Sandwiches", "price": 70, "description": "A toasted bun packed with a crisp patty, fresh veggies and house sauce.", "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500", "rating": 4.5, "veg": true, "bestseller": true, "available": true}, {"id": "SM-026", "name": "Veg Paneer Cheese Burger", "category": "Burgers and Sandwiches", "price": 100, "description": "A toasted bun packed with a crisp patty, fresh veggies and house sauce.", "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-027", "name": "Fries", "category": "Chinese", "price": 60, "description": "Fries made fresh to order with our signature blend of spices.", "image": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-028", "name": "Potato Chilli", "category": "Chinese", "price": 80, "description": "Wok-tossed in a bold Indo-Chinese sauce with a fiery, tangy finish.", "image": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-029", "name": "Potato 65", "category": "Chinese", "price": 100, "description": "Wok-tossed in a bold Indo-Chinese sauce with a fiery, tangy finish.", "image": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-030", "name": "Veg Manchurian", "category": "Chinese", "price": 100, "description": "Wok-tossed in a bold Indo-Chinese sauce with a fiery, tangy finish.", "image": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=500", "rating": 4.5, "veg": true, "bestseller": true, "available": true}, {"id": "SM-031", "name": "Kothe", "category": "Chinese", "price": 100, "description": "Wok-tossed in a bold Indo-Chinese sauce with a fiery, tangy finish.", "image": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-032", "name": "Crispy Corn", "category": "Chinese", "price": 130, "description": "Wok-tossed in a bold Indo-Chinese sauce with a fiery, tangy finish.", "image": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-033", "name": "Channa Chilli", "category": "Chinese", "price": 130, "description": "Wok-tossed in a bold Indo-Chinese sauce with a fiery, tangy finish.", "image": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-034", "name": "Corn Chilli", "category": "Chinese", "price": 140, "description": "Wok-tossed in a bold Indo-Chinese sauce with a fiery, tangy finish.", "image": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-035", "name": "Mushroom Chilli", "category": "Chinese", "price": 150, "description": "Wok-tossed in a bold Indo-Chinese sauce with a fiery, tangy finish.", "image": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-036", "name": "Paneer Chilli", "category": "Chinese", "price": 160, "description": "Wok-tossed in a bold Indo-Chinese sauce with a fiery, tangy finish.", "image": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-037", "name": "Paneer 65", "category": "Chinese", "price": 170, "description": "Wok-tossed in a bold Indo-Chinese sauce with a fiery, tangy finish.", "image": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-038", "name": "Veg Fried Rice", "category": "Fried Rice and Noodles", "price": 90, "description": "Wok-fried rice tossed with crisp vegetables and signature seasoning.", "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-039", "name": "Veg Schezwan Fried Rice", "category": "Fried Rice and Noodles", "price": 100, "description": "Wok-fried rice tossed with crisp vegetables and signature seasoning.", "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-040", "name": "Veg Triple Schezwan Fried Rice", "category": "Fried Rice and Noodles", "price": 130, "description": "Wok-fried rice tossed with crisp vegetables and signature seasoning.", "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-041", "name": "Veg Manchurian Fried Rice", "category": "Fried Rice and Noodles", "price": 110, "description": "Wok-tossed in a bold Indo-Chinese sauce with a fiery, tangy finish.", "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-042", "name": "Veg Paneer Fried Rice", "category": "Fried Rice and Noodles", "price": 120, "description": "Wok-fried rice tossed with crisp vegetables and signature seasoning.", "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-043", "name": "Veg Noodles", "category": "Fried Rice and Noodles", "price": 80, "description": "Stir-fried noodles tossed with fresh vegetables in a smoky wok sauce.", "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-044", "name": "Veg Chowmein", "category": "Fried Rice and Noodles", "price": 80, "description": "Stir-fried noodles tossed with fresh vegetables in a smoky wok sauce.", "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-045", "name": "Veg Hakka Noodles", "category": "Fried Rice and Noodles", "price": 90, "description": "Stir-fried noodles tossed with fresh vegetables in a smoky wok sauce.", "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500", "rating": 4.5, "veg": true, "bestseller": true, "available": true}, {"id": "SM-046", "name": "Veg Schezwan Noodles", "category": "Fried Rice and Noodles", "price": 90, "description": "Stir-fried noodles tossed with fresh vegetables in a smoky wok sauce.", "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-047", "name": "Veg Manchurian Noodles", "category": "Fried Rice and Noodles", "price": 100, "description": "Wok-tossed in a bold Indo-Chinese sauce with a fiery, tangy finish.", "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-048", "name": "Veg Mushroom Noodles", "category": "Fried Rice and Noodles", "price": 100, "description": "Stir-fried noodles tossed with fresh vegetables in a smoky wok sauce.", "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-049", "name": "Veg Paneer Noodles", "category": "Chinese", "price": 110, "description": "Stir-fried noodles tossed with fresh vegetables in a smoky wok sauce.", "image": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-050", "name": "Tea", "category": "Drinks (Beverages)", "price": 20, "description": "Freshly brewed and served hot, just the way you like it.", "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-051", "name": "Butter Milk", "category": "Drinks (Beverages)", "price": 30, "description": "Chilled and refreshing \u2014 the perfect companion to your meal.", "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-052", "name": "Coffee", "category": "Drinks (Beverages)", "price": 30, "description": "Freshly brewed and served hot, just the way you like it.", "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-053", "name": "Cold Coffee", "category": "Drinks (Beverages)", "price": 50, "description": "Freshly brewed and served hot, just the way you like it.", "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-054", "name": "Cold Coffee With Ice Cream", "category": "Drinks (Beverages)", "price": 60, "description": "Freshly brewed and served hot, just the way you like it.", "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500", "rating": 4.5, "veg": true, "bestseller": true, "available": true}, {"id": "SM-055", "name": "Cold Drink", "category": "Drinks (Beverages)", "price": 20, "description": "Chilled and refreshing \u2014 the perfect companion to your meal.", "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-056", "name": "Mineral Water", "category": "Drinks (Beverages)", "price": 20, "description": "Chilled and refreshing \u2014 the perfect companion to your meal.", "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-057", "name": "Strawberry Shake", "category": "Drinks (Beverages)", "price": 60, "description": "Chilled and refreshing \u2014 the perfect companion to your meal.", "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-058", "name": "Tomato Soup", "category": "Drinks (Beverages)", "price": 50, "description": "A warm, comforting bowl to start your meal right.", "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-059", "name": "Manchow Soup", "category": "Drinks (Beverages)", "price": 50, "description": "A warm, comforting bowl to start your meal right.", "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-060", "name": "Hot & Sour", "category": "Main Course", "price": 60, "description": "Hot & Sour made fresh to order with our signature blend of spices.", "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-061", "name": "Aloo Tamatar", "category": "Main Course", "price": 80, "description": "A home-style vegetable preparation cooked in classic aloo masala.", "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-062", "name": "Aloo Jeera", "category": "Main Course", "price": 90, "description": "A home-style vegetable preparation cooked in classic aloo masala.", "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-063", "name": "Aloo Mutter", "category": "Main Course", "price": 90, "description": "A home-style vegetable preparation cooked in classic aloo masala.", "image": "/images/Aloo-matar.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-064", "name": "Mutter Masala", "category": "Main Course", "price": 90, "description": "A home-style vegetable preparation cooked in classic mutter masala.", "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-065", "name": "Aloo Mutter Fry", "category": "Main Course", "price": 100, "description": "A home-style vegetable preparation cooked in classic aloo masala.", "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-066", "name": "Aloo Shimla", "category": "Main Course", "price": 100, "description": "A home-style vegetable preparation cooked in classic aloo masala.", "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-067", "name": "Gobhi Masala", "category": "Main Course", "price": 100, "description": "A home-style vegetable preparation cooked in classic gobhi masala.", "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-068", "name": "Bhindi Masala", "category": "Main Course", "price": 110, "description": "A home-style vegetable preparation cooked in classic bhindi masala.", "image": "/images/Bhindi-masala.webp", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-069", "name": "Bhindi Do Pyaza", "category": "Main Course", "price": 110, "description": "A home-style vegetable preparation cooked in classic bhindi masala.", "image": "/images/BHindi-do-pyaza.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-070", "name": "Mix Veg", "category": "Main Course", "price": 120, "description": "A home-style vegetable preparation cooked in classic mix masala.", "image": "/images/Mix-veg.webp", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-071", "name": "Veg Kolhapuri", "category": "Main Course", "price": 130, "description": "Veg Kolhapuri made fresh to order with our signature blend of spices.", "image": "/images/Veg-kolhapuri.webp", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-072", "name": "Bhindi Fry", "category": "Main Course", "price": 120, "description": "A home-style vegetable preparation cooked in classic bhindi masala.", "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-073", "name": "Chhole", "category": "Main Course", "price": 120, "description": "Spiced chickpeas simmered in a thick, tangy onion-tomato gravy.", "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-074", "name": "Punjabi Chhole", "category": "Main Course", "price": 130, "description": "Spiced chickpeas simmered in a thick, tangy onion-tomato gravy.", "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-075", "name": "Dum Aloo", "category": "Main Course", "price": 130, "description": "A home-style vegetable preparation cooked in classic dum masala.", "image": "/images/KAshmiri-dum-aloo.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-076", "name": "Punjabi Dum Aloo", "category": "Main Course", "price": 130, "description": "A home-style vegetable preparation cooked in classic punjabi masala.", "image": "/images/KAshmiri-dum-aloo.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-077", "name": "Veg Kofta", "category": "Main Course", "price": 140, "description": "Delicate vegetable dumplings simmered in a velvety, mildly spiced gravy.", "image": "/images/Veg-kofta.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-078", "name": "Rajasthani Kofta", "category": "Main Course", "price": 140, "description": "Delicate vegetable dumplings simmered in a velvety, mildly spiced gravy.", "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-079", "name": "Malai Kofta", "category": "Main Course", "price": 150, "description": "Delicate vegetable dumplings simmered in a velvety, mildly spiced gravy.", "image": "/images/Malai-kofta.avif", "rating": 4.5, "veg": true, "bestseller": true, "available": true}, {"id": "SM-080", "name": "Sev Tamatar", "category": "Main Course", "price": 140, "description": "Sev Tamatar made fresh to order with our signature blend of spices.", "image": "/images/sev-tamatar.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-081", "name": "Sev Masala", "category": "Main Course", "price": 150, "description": "Sev Masala made fresh to order with our signature blend of spices.", "image": "/images/sev-masala.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-082", "name": "Mushroom Masala", "category": "Main Course", "price": 150, "description": "Mushroom Masala made fresh to order with our signature blend of spices.", "image": "/images/mushroom-masala.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-083", "name": "Kaju Curry", "category": "Main Course", "price": 170, "description": "Kaju Curry made fresh to order with our signature blend of spices.", "image": "/images/kaju-curry.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-084", "name": "Kaju Masala", "category": "Main Course", "price": 180, "description": "Kaju Masala made fresh to order with our signature blend of spices.", "image": "/images/kaju-masala.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-085", "name": "Methi Mutter Malai", "category": "Main Course", "price": 140, "description": "A home-style vegetable preparation cooked in classic methi masala.", "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-086", "name": "Dal Fry", "category": "Main Course", "price": 90, "description": "Slow-cooked lentils tempered with ghee, garlic and warming spices.", "image": "/images/Dal-Fry.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-087", "name": "Dal Tadka", "category": "Main Course", "price": 100, "description": "Slow-cooked lentils tempered with ghee, garlic and warming spices.", "image": "/images/Dal-Tadka.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-088", "name": "Dal Butter Fry", "category": "Main Course", "price": 100, "description": "Slow-cooked lentils tempered with ghee, garlic and warming spices.", "image": "/images/Dal-Butter-Fry.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-089", "name": "Dal Harimirch", "category": "Main Course", "price": 110, "description": "Slow-cooked lentils tempered with ghee, garlic and warming spices.", "image": "/images/Dal-hari-mirch-fry.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-090", "name": "Dal Lehsuni Palak", "category": "Main Course", "price": 120, "description": "Slow-cooked lentils tempered with ghee, garlic and warming spices.", "image": "/images/Dal-lehsuni-palak.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-091", "name": "Dal Khichdi", "category": "Main Course", "price": 140, "description": "Slow-cooked lentils tempered with ghee, garlic and warming spices.", "image": "/images/dal-khichdi.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-092", "name": "Aloo Gobi", "category": "Main Course", "price": 110, "description": "A home-style vegetable preparation cooked in classic aloo masala.", "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-093", "name": "Chole Paneer", "category": "Main Course", "price": 160, "description": "Soft paneer cubes simmered in a rich, aromatic chole-style gravy.", "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-094", "name": "Matar Paneer", "category": "Main Course", "price": 160, "description": "Soft paneer cubes simmered in a rich, aromatic matar-style gravy.", "image": "/images/matar-paneer.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-095", "name": "Butter Paneer Masala", "category": "Main Course", "price": 170, "description": "Soft paneer cubes simmered in a rich, aromatic butter-style gravy.", "image": "/images/butter-paneer-masala.avif", "rating": 4.5, "veg": true, "bestseller": true, "available": true}, {"id": "SM-096", "name": "Kadhai Paneer", "category": "Main Course", "price": 180, "description": "Soft paneer cubes simmered in a rich, aromatic kadhai-style gravy.", "image": "/images/kadhai-paneer.avif", "rating": 4.5, "veg": true, "bestseller": true, "available": true}, {"id": "SM-097", "name": "Shahi Paneer", "category": "Main Course", "price": 180, "description": "Soft paneer cubes simmered in a rich, aromatic shahi-style gravy.", "image": "/images/shahi-paneer.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-098", "name": "Palak Paneer", "category": "Main Course", "price": 160, "description": "Soft paneer cubes simmered in a rich, aromatic palak-style gravy.", "image": "/images/palak-paneer.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-099", "name": "Hyderabadi Paneer", "category": "Main Course", "price": 120, "description": "Soft paneer cubes simmered in a rich, aromatic hyderabadi-style gravy.", "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-100", "name": "Masala Paneer", "category": "Main Course", "price": 180, "description": "Soft paneer cubes simmered in a rich, aromatic masala-style gravy.", "image": "/images/masala-paneer.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-101", "name": "Paneer Do Pyaza", "category": "Main Course", "price": 180, "description": "Soft paneer cubes simmered in a rich, aromatic paneer-style gravy.", "image": "/images/paneer-do-pyaza.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-102", "name": "Paneer Kolhapuri", "category": "Main Course", "price": 190, "description": "Soft paneer cubes simmered in a rich, aromatic paneer-style gravy.", "image": "/images/paneer-kolhapuri.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-103", "name": "Paneer Chatpata", "category": "Main Course", "price": 190, "description": "Soft paneer cubes simmered in a rich, aromatic paneer-style gravy.", "image": "/images/paneer-chatpata.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-104", "name": "Paneer Muglai", "category": "Main Course", "price": 190, "description": "Soft paneer cubes simmered in a rich, aromatic paneer-style gravy.", "image": "/images/paneer-mughlai.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-105", "name": "Paneer Punjabi", "category": "Main Course", "price": 190, "description": "Soft paneer cubes simmered in a rich, aromatic paneer-style gravy.", "image": "/images/paneer-punjabi.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-106", "name": "Mushroom Paneer", "category": "Main Course", "price": 190, "description": "Soft paneer cubes simmered in a rich, aromatic mushroom-style gravy.", "image": "/images/mushroom-paneer.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-107", "name": "Paneer Korma", "category": "Main Course", "price": 200, "description": "Soft paneer cubes simmered in a rich, aromatic paneer-style gravy.", "image": "/images/paneer-korma.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-108", "name": "Paneer Lababdar", "category": "Main Course", "price": 200, "description": "Soft paneer cubes simmered in a rich, aromatic paneer-style gravy.", "image": "/images/paneer-lababdar.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-109", "name": "Paneer Tikka Masala", "category": "Main Course", "price": 210, "description": "Soft paneer cubes simmered in a rich, aromatic paneer-style gravy.", "image": "/images/paneer-tikka-masala.avif", "rating": 4.5, "veg": true, "bestseller": true, "available": true}, {"id": "SM-110", "name": "Paneer Bhurji", "category": "Main Course", "price": 210, "description": "Soft paneer cubes simmered in a rich, aromatic paneer-style gravy.", "image": "/images/paneer-bhurji.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-111", "name": "Kaju Paneer", "category": "Main Course", "price": 210, "description": "Soft paneer cubes simmered in a rich, aromatic kaju-style gravy.", "image": "/images/Kaju-paneer.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-112", "name": "Melan Special Paneer", "category": "Main Course", "price": 240, "description": "Soft paneer cubes simmered in a rich, aromatic melan-style gravy.", "image": "/images/Melan-special-paneer.webp", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-113", "name": "Plain Rice", "category": "Rice and Biryani", "price": 90, "description": "Fragrant long-grain rice layered and cooked with whole spices.", "image": "/images/Plain-rice.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-114", "name": "Jeera Rice", "category": "Rice and Biryani", "price": 100, "description": "Fragrant long-grain rice layered and cooked with whole spices.", "image": "/images/jeera-rice.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-115", "name": "Veg Pulav", "category": "Rice and Biryani", "price": 100, "description": "Fragrant long-grain rice layered and cooked with whole spices.", "image": "/images/pulao.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-116", "name": "Dal with Rice", "category": "Rice and Biryani", "price": 80, "description": "Slow-cooked lentils tempered with ghee, garlic and warming spices.", "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-117", "name": "Chhole & Rice", "category": "Rice and Biryani", "price": 90, "description": "Fragrant long-grain rice layered and cooked with whole spices.", "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-118", "name": "Lapeta", "category": "Rice and Biryani", "price": 90, "description": "Lapeta made fresh to order with our signature blend of spices.", "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-119", "name": "Veg Biryani", "category": "Rice and Biryani", "price": 110, "description": "Fragrant long-grain rice layered and cooked with whole spices.", "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500", "rating": 4.5, "veg": true, "bestseller": true, "available": true}, {"id": "SM-120", "name": "Hyderabadi Briyani", "category": "Rice and Biryani", "price": 120, "description": "Hyderabadi Briyani made fresh to order with our signature blend of spices.", "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-121", "name": "Butter Khichdi", "category": "Rice and Biryani", "price": 100, "description": "Comforting rice and lentils slow-cooked together with warm ghee.", "image": "/images/butter-khichdi.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-122", "name": "Tawa Roti", "category": "Breads", "price": 7, "description": "Baked fresh in the tandoor and served piping hot with a soft, smoky char.", "image": "/images/Tawa-roti.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-123", "name": "Tawa Butter Roti", "category": "Breads", "price": 8, "description": "Baked fresh in the tandoor and served piping hot with a soft, smoky char.", "image": "/images/Tawa-butter-roti.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-124", "name": "Tandoori Plain Roti", "category": "Tandoor Se", "price": 10, "description": "Baked fresh in the tandoor and served piping hot with a soft, smoky char.", "image": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-125", "name": "Tandoori Butter Roti", "category": "Tandoor Se", "price": 12, "description": "Baked fresh in the tandoor and served piping hot with a soft, smoky char.", "image": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-126", "name": "Tawa Paratha", "category": "Breads", "price": 20, "description": "Baked fresh in the tandoor and served piping hot with a soft, smoky char.", "image": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-127", "name": "Kulcha", "category": "Tandoor Se", "price": 20, "description": "Baked fresh in the tandoor and served piping hot with a soft, smoky char.", "image": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-128", "name": "Butter Kulcha", "category": "Tandoor Se", "price": 30, "description": "Baked fresh in the tandoor and served piping hot with a soft, smoky char.", "image": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-129", "name": "Laccha Paratha", "category": "Breads", "price": 30, "description": "Baked fresh in the tandoor and served piping hot with a soft, smoky char.", "image": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-130", "name": "Naan", "category": "Tandoor Se", "price": 30, "description": "Baked fresh in the tandoor and served piping hot with a soft, smoky char.", "image": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-131", "name": "Butter Naan", "category": "Tandoor Se", "price": 40, "description": "Baked fresh in the tandoor and served piping hot with a soft, smoky char.", "image": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-132", "name": "Garlic Naan", "category": "Tandoor Se", "price": 60, "description": "Baked fresh in the tandoor and served piping hot with a soft, smoky char.", "image": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500", "rating": 4.5, "veg": true, "bestseller": true, "available": true}, {"id": "SM-133", "name": "Aloo Paratha", "category": "Breads", "price": 90, "description": "Baked fresh in the tandoor and served piping hot with a soft, smoky char.", "image": "/images/Aloo-Paratha.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-134", "name": "Paneer Paratha", "category": "Breads", "price": 120, "description": "Baked fresh in the tandoor and served piping hot with a soft, smoky char.", "image": "/images/Paneer-paratha.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-135", "name": "Chola Kulcha", "category": "Combos", "price": 120, "description": "Baked fresh in the tandoor and served piping hot with a soft, smoky char.", "image": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-136", "name": "Paneer Kulcha", "category": "Combos", "price": 140, "description": "Baked fresh in the tandoor and served piping hot with a soft, smoky char.", "image": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500", "rating": 4.5, "veg": true, "bestseller": true, "available": true}, {"id": "SM-137", "name": "Paneer Masala Kulcha", "category": "Combos", "price": 160, "description": "Baked fresh in the tandoor and served piping hot with a soft, smoky char.", "image": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-138", "name": "Veg Raita", "category": "Accompaniments", "price": 60, "description": "Fresh whisked curd, cooling and lightly spiced \u2014 the perfect side.", "image": "https://images.unsplash.com/photo-1571115177098-24ec42ed635d?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-139", "name": "Boondi Raita", "category": "Accompaniments", "price": 60, "description": "Fresh whisked curd, cooling and lightly spiced \u2014 the perfect side.", "image": "https://images.unsplash.com/photo-1571115177098-24ec42ed635d?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-140", "name": "Plain Curd", "category": "Accompaniments", "price": 50, "description": "Fresh whisked curd, cooling and lightly spiced \u2014 the perfect side.", "image": "https://images.unsplash.com/photo-1571115177098-24ec42ed635d?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-141", "name": "Sweet Curd", "category": "Accompaniments", "price": 60, "description": "Fresh whisked curd, cooling and lightly spiced \u2014 the perfect side.", "image": "https://images.unsplash.com/photo-1571115177098-24ec42ed635d?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-142", "name": "Green Salad", "category": "Accompaniments", "price": 50, "description": "Crisp, fresh-cut vegetables tossed together for a light, refreshing bite.", "image": "https://images.unsplash.com/photo-1571115177098-24ec42ed635d?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-143", "name": "Kachumar Salad", "category": "Accompaniments", "price": 60, "description": "Crisp, fresh-cut vegetables tossed together for a light, refreshing bite.", "image": "https://images.unsplash.com/photo-1571115177098-24ec42ed635d?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-144", "name": "Dried Papad", "category": "Accompaniments", "price": 10, "description": "A crackling, thin lentil wafer, roasted or fried to order.", "image": "https://images.unsplash.com/photo-1571115177098-24ec42ed635d?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-145", "name": "Fried Papad", "category": "Accompaniments", "price": 20, "description": "A crackling, thin lentil wafer, roasted or fried to order.", "image": "https://images.unsplash.com/photo-1571115177098-24ec42ed635d?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-146", "name": "Masala Papad", "category": "Accompaniments", "price": 30, "description": "A crackling, thin lentil wafer, roasted or fried to order.", "image": "https://images.unsplash.com/photo-1571115177098-24ec42ed635d?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-147", "name": "Gulab Jamun", "category": "Snacks", "price": 40, "description": "Soft, spongy milk dumplings soaked in warm rose-scented sugar syrup.", "image": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500", "rating": 4.5, "veg": true, "bestseller": true, "available": true}, {"id": "SM-148", "name": "Veg Thali", "category": "Thali", "price": 80, "description": "A generous, wholesome platter of curated dishes served together, thali-style.", "image": "/images/Veg-thali.avif", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-149", "name": "Regular Thali", "category": "Thali", "price": 100, "description": "A generous, wholesome platter of curated dishes served together, thali-style.", "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-150", "name": "Special Thali", "category": "Thali", "price": 150, "description": "A generous, wholesome platter of curated dishes served together, thali-style.", "image": "/images/Special-thali.avif", "rating": 4.5, "veg": true, "bestseller": true, "available": true}, {"id": "SM-151", "name": "2 Laccha Paratha With Butter Paneer Masala", "category": "Combos", "price": 250, "description": "Baked fresh in the tandoor and served piping hot with a soft, smoky char.", "image": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-152", "name": "Idli [2 Pieces] With Sambhar And Nari", "category": "Combos", "price": 200, "description": "Soft steamed rice cakes served with sambar and coconut chutney.", "image": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}, {"id": "SM-153", "name": "Kadai Paneer With 4 Tawa Butter", "category": "Combos", "price": 135, "description": "A satisfying combo plate pairing our favourites for a complete meal.", "image": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500", "rating": 4.5, "veg": true, "bestseller": false, "available": true}]}
+</script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+# Dependencies
+**/node_modules/
+
+# Generated build files
+**/dist/
+
+# Local environment files and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Private keys / certificates
+*.pem
+*.key
+*.p12
+
+# Editor and operating-system files
+.vscode/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,23 @@
+// Add after the API_BASE declaration in admin/src/api.ts
+export interface MenuItemInput {
+  categoryId: string;
+  itemCode: string;
+  name: string;
+  description: string;
+  price: number;
+  imageUrl: string;
+  isVeg: boolean;
+  isBestseller: boolean;
+  isAvailable: boolean;
+}
+
+// Add inside `export const api = { ... }` in admin/src/api.ts
+createMenuItem(input: MenuItemInput): Promise<{ item: AdminMenuItem }> {
+  return request("/api/admin/menu/items", { method: "POST", body: JSON.stringify(input) });
+},
+updateMenuItem(id: string, input: MenuItemInput): Promise<{ item: AdminMenuItem }> {
+  return request(`/api/admin/menu/items/${encodeURIComponent(id)}`, { method: "PATCH", body: JSON.stringify(input) });
+},
+deleteMenuItem(id: string): Promise<void> {
+  return request(`/api/admin/menu/items/${encodeURIComponent(id)}`, { method: "DELETE" });
+},

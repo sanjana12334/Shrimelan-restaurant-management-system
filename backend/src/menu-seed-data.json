@@ -1,0 +1,1946 @@
+{
+  "menu": [
+    {
+      "Item_ID": "SM-001",
+      "Item_Name": "Melan Special Dosa",
+      "Category": "South Indian",
+      "Cost_to_Make": 54,
+      "Price": 120,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500",
+      "Description": "Melan Special Dosa prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-002",
+      "Item_Name": "Shahi Dosa",
+      "Category": "South Indian",
+      "Cost_to_Make": 40,
+      "Price": 100,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500",
+      "Description": "Shahi Dosa prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-003",
+      "Item_Name": "Idli",
+      "Category": "South Indian",
+      "Cost_to_Make": 16,
+      "Price": 40,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500",
+      "Description": "Idli prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-004",
+      "Item_Name": "Idli Fry",
+      "Category": "South Indian",
+      "Cost_to_Make": 20,
+      "Price": 50,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500",
+      "Description": "Idli Fry prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-005",
+      "Item_Name": "Plain Dosa",
+      "Category": "South Indian",
+      "Cost_to_Make": 20,
+      "Price": 50,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500",
+      "Description": "Plain Dosa prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-006",
+      "Item_Name": "Masala Dosa",
+      "Category": "South Indian",
+      "Cost_to_Make": 24,
+      "Price": 60,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500",
+      "Description": "Masala Dosa prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-007",
+      "Item_Name": "Paper Plain Dosa",
+      "Category": "South Indian",
+      "Cost_to_Make": 28,
+      "Price": 70,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500",
+      "Description": "Paper Plain Dosa prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-008",
+      "Item_Name": "Paper Masala Dosa",
+      "Category": "South Indian",
+      "Cost_to_Make": 32,
+      "Price": 80,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500",
+      "Description": "Paper Masala Dosa prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-009",
+      "Item_Name": "Rava Plain Dosa",
+      "Category": "South Indian",
+      "Cost_to_Make": 28,
+      "Price": 70,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500",
+      "Description": "Rava Plain Dosa prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-010",
+      "Item_Name": "Rava Masala Dosa",
+      "Category": "South Indian",
+      "Cost_to_Make": 32,
+      "Price": 80,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500",
+      "Description": "Rava Masala Dosa prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-011",
+      "Item_Name": "Cutting Masala Dosa",
+      "Category": "South Indian",
+      "Cost_to_Make": 32,
+      "Price": 80,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500",
+      "Description": "Cutting Masala Dosa prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-012",
+      "Item_Name": "Mysore Masala Dosa",
+      "Category": "South Indian",
+      "Cost_to_Make": 28,
+      "Price": 70,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500",
+      "Description": "Mysore Masala Dosa prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-013",
+      "Item_Name": "Paneer Plain Dosa",
+      "Category": "South Indian",
+      "Cost_to_Make": 32,
+      "Price": 80,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500",
+      "Description": "Paneer Plain Dosa prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-014",
+      "Item_Name": "Paneer Masala Dosa",
+      "Category": "South Indian",
+      "Cost_to_Make": 36,
+      "Price": 90,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500",
+      "Description": "Paneer Masala Dosa prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-015",
+      "Item_Name": "Tomato Uttapam",
+      "Category": "Snacks",
+      "Cost_to_Make": 24,
+      "Price": 60,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500",
+      "Description": "Tomato Uttapam prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-016",
+      "Item_Name": "Onion Uttapam",
+      "Category": "Snacks",
+      "Cost_to_Make": 28,
+      "Price": 70,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500",
+      "Description": "Onion Uttapam prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-017",
+      "Item_Name": "Veg Uttapam",
+      "Category": "Snacks",
+      "Cost_to_Make": 32,
+      "Price": 80,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500",
+      "Description": "Veg Uttapam prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-018",
+      "Item_Name": "Chole Bhature",
+      "Category": "Snacks",
+      "Cost_to_Make": 40,
+      "Price": 100,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500",
+      "Description": "Chole Bhature prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-019",
+      "Item_Name": "Veg Sandwich",
+      "Category": "Burgers and Sandwiches",
+      "Cost_to_Make": 24,
+      "Price": 60,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500",
+      "Description": "Veg Sandwich prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-020",
+      "Item_Name": "Veg Cheese Sandwich",
+      "Category": "Burgers and Sandwiches",
+      "Cost_to_Make": 28,
+      "Price": 70,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500",
+      "Description": "Veg Cheese Sandwich prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-021",
+      "Item_Name": "Veg Double Cheese Sandwich",
+      "Category": "Burgers and Sandwiches",
+      "Cost_to_Make": 32,
+      "Price": 80,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500",
+      "Description": "Veg Double Cheese Sandwich prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-022",
+      "Item_Name": "Veg Corn Cheese Sandwich",
+      "Category": "Burgers and Sandwiches",
+      "Cost_to_Make": 32,
+      "Price": 80,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500",
+      "Description": "Veg Corn Cheese Sandwich prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-023",
+      "Item_Name": "Veg Paneer Cheese Sandwich",
+      "Category": "Burgers and Sandwiches",
+      "Cost_to_Make": 40,
+      "Price": 100,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500",
+      "Description": "Veg Paneer Cheese Sandwich prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-024",
+      "Item_Name": "Veg Burger",
+      "Category": "Burgers and Sandwiches",
+      "Cost_to_Make": 24,
+      "Price": 60,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500",
+      "Description": "Veg Burger prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-025",
+      "Item_Name": "Veg Cheese Burger",
+      "Category": "Burgers and Sandwiches",
+      "Cost_to_Make": 28,
+      "Price": 70,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500",
+      "Description": "Veg Cheese Burger prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-026",
+      "Item_Name": "Veg Paneer Cheese Burger",
+      "Category": "Burgers and Sandwiches",
+      "Cost_to_Make": 40,
+      "Price": 100,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500",
+      "Description": "Veg Paneer Cheese Burger prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-027",
+      "Item_Name": "Fries",
+      "Category": "Chinese",
+      "Cost_to_Make": 24,
+      "Price": 60,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=500",
+      "Description": "Fries prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-028",
+      "Item_Name": "Potato Chilli",
+      "Category": "Chinese",
+      "Cost_to_Make": 32,
+      "Price": 80,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=500",
+      "Description": "Potato Chilli prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-029",
+      "Item_Name": "Potato 65",
+      "Category": "Chinese",
+      "Cost_to_Make": 40,
+      "Price": 100,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=500",
+      "Description": "Potato 65 prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-030",
+      "Item_Name": "Veg Manchurian",
+      "Category": "Chinese",
+      "Cost_to_Make": 40,
+      "Price": 100,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=500",
+      "Description": "Veg Manchurian prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-031",
+      "Item_Name": "Kothe",
+      "Category": "Chinese",
+      "Cost_to_Make": 40,
+      "Price": 100,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=500",
+      "Description": "Kothe prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-032",
+      "Item_Name": "Crispy Corn",
+      "Category": "Chinese",
+      "Cost_to_Make": 59,
+      "Price": 130,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=500",
+      "Description": "Crispy Corn prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-033",
+      "Item_Name": "Channa Chilli",
+      "Category": "Chinese",
+      "Cost_to_Make": 59,
+      "Price": 130,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=500",
+      "Description": "Channa Chilli prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-034",
+      "Item_Name": "Corn Chilli",
+      "Category": "Chinese",
+      "Cost_to_Make": 63,
+      "Price": 140,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=500",
+      "Description": "Corn Chilli prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-035",
+      "Item_Name": "Mushroom Chilli",
+      "Category": "Chinese",
+      "Cost_to_Make": 68,
+      "Price": 150,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=500",
+      "Description": "Mushroom Chilli prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-036",
+      "Item_Name": "Paneer Chilli",
+      "Category": "Chinese",
+      "Cost_to_Make": 72,
+      "Price": 160,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=500",
+      "Description": "Paneer Chilli prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-037",
+      "Item_Name": "Paneer 65",
+      "Category": "Chinese",
+      "Cost_to_Make": 77,
+      "Price": 170,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=500",
+      "Description": "Paneer 65 prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-038",
+      "Item_Name": "Veg Fried Rice",
+      "Category": "Fried Rice and Noodles",
+      "Cost_to_Make": 36,
+      "Price": 90,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500",
+      "Description": "Veg Fried Rice prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-039",
+      "Item_Name": "Veg Schezwan Fried Rice",
+      "Category": "Fried Rice and Noodles",
+      "Cost_to_Make": 40,
+      "Price": 100,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500",
+      "Description": "Veg Schezwan Fried Rice prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-040",
+      "Item_Name": "Veg Triple Schezwan Fried Rice",
+      "Category": "Fried Rice and Noodles",
+      "Cost_to_Make": 59,
+      "Price": 130,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500",
+      "Description": "Veg Triple Schezwan Fried Rice prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-041",
+      "Item_Name": "Veg Manchurian Fried Rice",
+      "Category": "Fried Rice and Noodles",
+      "Cost_to_Make": 50,
+      "Price": 110,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500",
+      "Description": "Veg Manchurian Fried Rice prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-042",
+      "Item_Name": "Veg Paneer Fried Rice",
+      "Category": "Fried Rice and Noodles",
+      "Cost_to_Make": 54,
+      "Price": 120,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500",
+      "Description": "Veg Paneer Fried Rice prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-043",
+      "Item_Name": "Veg Noodles",
+      "Category": "Fried Rice and Noodles",
+      "Cost_to_Make": 32,
+      "Price": 80,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500",
+      "Description": "Veg Noodles prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-044",
+      "Item_Name": "Veg Chowmein",
+      "Category": "Fried Rice and Noodles",
+      "Cost_to_Make": 32,
+      "Price": 80,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500",
+      "Description": "Veg Chowmein prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-045",
+      "Item_Name": "Veg Hakka Noodles",
+      "Category": "Fried Rice and Noodles",
+      "Cost_to_Make": 36,
+      "Price": 90,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500",
+      "Description": "Veg Hakka Noodles prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-046",
+      "Item_Name": "Veg Schezwan Noodles",
+      "Category": "Fried Rice and Noodles",
+      "Cost_to_Make": 36,
+      "Price": 90,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500",
+      "Description": "Veg Schezwan Noodles prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-047",
+      "Item_Name": "Veg Manchurian Noodles",
+      "Category": "Fried Rice and Noodles",
+      "Cost_to_Make": 40,
+      "Price": 100,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500",
+      "Description": "Veg Manchurian Noodles prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-048",
+      "Item_Name": "Veg Mushroom Noodles",
+      "Category": "Fried Rice and Noodles",
+      "Cost_to_Make": 40,
+      "Price": 100,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500",
+      "Description": "Veg Mushroom Noodles prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-049",
+      "Item_Name": "Veg Paneer Noodles",
+      "Category": "Chinese",
+      "Cost_to_Make": 50,
+      "Price": 110,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=500",
+      "Description": "Veg Paneer Noodles prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-050",
+      "Item_Name": "Tea",
+      "Category": "Drinks (Beverages)",
+      "Cost_to_Make": 7,
+      "Price": 20,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500",
+      "Description": "Tea prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-051",
+      "Item_Name": "Butter Milk",
+      "Category": "Drinks (Beverages)",
+      "Cost_to_Make": 11,
+      "Price": 30,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500",
+      "Description": "Butter Milk prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-052",
+      "Item_Name": "Coffee",
+      "Category": "Drinks (Beverages)",
+      "Cost_to_Make": 11,
+      "Price": 30,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500",
+      "Description": "Coffee prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-053",
+      "Item_Name": "Cold Coffee",
+      "Category": "Drinks (Beverages)",
+      "Cost_to_Make": 20,
+      "Price": 50,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500",
+      "Description": "Cold Coffee prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-054",
+      "Item_Name": "Cold Coffee With Ice Cream",
+      "Category": "Drinks (Beverages)",
+      "Cost_to_Make": 24,
+      "Price": 60,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500",
+      "Description": "Cold Coffee With Ice Cream prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-055",
+      "Item_Name": "Cold Drink",
+      "Category": "Drinks (Beverages)",
+      "Cost_to_Make": 7,
+      "Price": 20,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500",
+      "Description": "Cold Drink prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-056",
+      "Item_Name": "Mineral Water",
+      "Category": "Drinks (Beverages)",
+      "Cost_to_Make": 7,
+      "Price": 20,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500",
+      "Description": "Mineral Water prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-057",
+      "Item_Name": "Strawberry Shake",
+      "Category": "Drinks (Beverages)",
+      "Cost_to_Make": 24,
+      "Price": 60,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500",
+      "Description": "Strawberry Shake prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-058",
+      "Item_Name": "Tomato Soup",
+      "Category": "Drinks (Beverages)",
+      "Cost_to_Make": 20,
+      "Price": 50,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500",
+      "Description": "Tomato Soup prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-059",
+      "Item_Name": "Manchow Soup",
+      "Category": "Drinks (Beverages)",
+      "Cost_to_Make": 20,
+      "Price": 50,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500",
+      "Description": "Manchow Soup prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-060",
+      "Item_Name": "Hot & Sour",
+      "Category": "Main Course",
+      "Cost_to_Make": 24,
+      "Price": 60,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500",
+      "Description": "Hot & Sour prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-061",
+      "Item_Name": "Aloo Tamatar",
+      "Category": "Main Course",
+      "Cost_to_Make": 32,
+      "Price": 80,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500",
+      "Description": "Aloo Tamatar prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-062",
+      "Item_Name": "Aloo Jeera",
+      "Category": "Main Course",
+      "Cost_to_Make": 36,
+      "Price": 90,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500",
+      "Description": "Aloo Jeera prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-063",
+      "Item_Name": "Aloo Mutter",
+      "Category": "Main Course",
+      "Cost_to_Make": 36,
+      "Price": 90,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/Aloo-matar.avif",
+      "Description": "Aloo Mutter prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-064",
+      "Item_Name": "Mutter Masala",
+      "Category": "Main Course",
+      "Cost_to_Make": 36,
+      "Price": 90,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500",
+      "Description": "Mutter Masala prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-065",
+      "Item_Name": "Aloo Mutter Fry",
+      "Category": "Main Course",
+      "Cost_to_Make": 40,
+      "Price": 100,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500",
+      "Description": "Aloo Mutter Fry prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-066",
+      "Item_Name": "Aloo Shimla",
+      "Category": "Main Course",
+      "Cost_to_Make": 40,
+      "Price": 100,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500",
+      "Description": "Aloo Shimla prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-067",
+      "Item_Name": "Gobhi Masala",
+      "Category": "Main Course",
+      "Cost_to_Make": 40,
+      "Price": 100,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500",
+      "Description": "Gobhi Masala prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-068",
+      "Item_Name": "Bhindi Masala",
+      "Category": "Main Course",
+      "Cost_to_Make": 50,
+      "Price": 110,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/Bhindi-masala.webp",
+      "Description": "Bhindi Masala prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-069",
+      "Item_Name": "Bhindi Do Pyaza",
+      "Category": "Main Course",
+      "Cost_to_Make": 50,
+      "Price": 110,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/BHindi-do-pyaza.avif",
+      "Description": "Bhindi Do Pyaza prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-070",
+      "Item_Name": "Mix Veg",
+      "Category": "Main Course",
+      "Cost_to_Make": 54,
+      "Price": 120,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/Mix-veg.webp",
+      "Description": "Mix Veg prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-071",
+      "Item_Name": "Veg Kolhapuri",
+      "Category": "Main Course",
+      "Cost_to_Make": 59,
+      "Price": 130,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/Veg-kolhapuri.webp",
+      "Description": "Veg Kolhapuri prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-072",
+      "Item_Name": "Bhindi Fry",
+      "Category": "Main Course",
+      "Cost_to_Make": 54,
+      "Price": 120,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500",
+      "Description": "Bhindi Fry prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-073",
+      "Item_Name": "Chhole",
+      "Category": "Main Course",
+      "Cost_to_Make": 54,
+      "Price": 120,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500",
+      "Description": "Chhole prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-074",
+      "Item_Name": "Punjabi Chhole",
+      "Category": "Main Course",
+      "Cost_to_Make": 59,
+      "Price": 130,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500",
+      "Description": "Punjabi Chhole prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-075",
+      "Item_Name": "Dum Aloo",
+      "Category": "Main Course",
+      "Cost_to_Make": 59,
+      "Price": 130,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/KAshmiri-dum-aloo.avif",
+      "Description": "Dum Aloo prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-076",
+      "Item_Name": "Punjabi Dum Aloo",
+      "Category": "Main Course",
+      "Cost_to_Make": 59,
+      "Price": 130,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/KAshmiri-dum-aloo.avif",
+      "Description": "Punjabi Dum Aloo prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-077",
+      "Item_Name": "Veg Kofta",
+      "Category": "Main Course",
+      "Cost_to_Make": 63,
+      "Price": 140,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/Veg-kofta.avif",
+      "Description": "Veg Kofta prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-078",
+      "Item_Name": "Rajasthani Kofta",
+      "Category": "Main Course",
+      "Cost_to_Make": 63,
+      "Price": 140,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500",
+      "Description": "Rajasthani Kofta prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-079",
+      "Item_Name": "Malai Kofta",
+      "Category": "Main Course",
+      "Cost_to_Make": 68,
+      "Price": 150,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/Malai-kofta.avif",
+      "Description": "Malai Kofta prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-080",
+      "Item_Name": "Sev Tamatar",
+      "Category": "Main Course",
+      "Cost_to_Make": 63,
+      "Price": 140,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/sev-tamatar.avif",
+      "Description": "Sev Tamatar prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-081",
+      "Item_Name": "Sev Masala",
+      "Category": "Main Course",
+      "Cost_to_Make": 68,
+      "Price": 150,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/sev-masala.avif",
+      "Description": "Sev Masala prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-082",
+      "Item_Name": "Mushroom Masala",
+      "Category": "Main Course",
+      "Cost_to_Make": 68,
+      "Price": 150,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/mushroom-masala.avif",
+      "Description": "Mushroom Masala prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-083",
+      "Item_Name": "Kaju Curry",
+      "Category": "Main Course",
+      "Cost_to_Make": 77,
+      "Price": 170,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/kaju-curry.avif",
+      "Description": "Kaju Curry prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-084",
+      "Item_Name": "Kaju Masala",
+      "Category": "Main Course",
+      "Cost_to_Make": 81,
+      "Price": 180,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/kaju-masala.avif",
+      "Description": "Kaju Masala prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-085",
+      "Item_Name": "Methi Mutter Malai",
+      "Category": "Main Course",
+      "Cost_to_Make": 63,
+      "Price": 140,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500",
+      "Description": "Methi Mutter Malai prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-086",
+      "Item_Name": "Dal Fry",
+      "Category": "Main Course",
+      "Cost_to_Make": 36,
+      "Price": 90,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/Dal-Fry.avif",
+      "Description": "Dal Fry prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-087",
+      "Item_Name": "Dal Tadka",
+      "Category": "Main Course",
+      "Cost_to_Make": 40,
+      "Price": 100,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/Dal-Tadka.avif",
+      "Description": "Dal Tadka prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-088",
+      "Item_Name": "Dal Butter Fry",
+      "Category": "Main Course",
+      "Cost_to_Make": 40,
+      "Price": 100,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/Dal-Butter-Fry.avif",
+      "Description": "Dal Butter Fry prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-089",
+      "Item_Name": "Dal Harimirch",
+      "Category": "Main Course",
+      "Cost_to_Make": 50,
+      "Price": 110,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/Dal-hari-mirch-fry.avif",
+      "Description": "Dal Harimirch prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-090",
+      "Item_Name": "Dal Lehsuni Palak",
+      "Category": "Main Course",
+      "Cost_to_Make": 54,
+      "Price": 120,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/Dal-lehsuni-palak.avif",
+      "Description": "Dal Lehsuni Palak prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-091",
+      "Item_Name": "Dal Khichdi",
+      "Category": "Main Course",
+      "Cost_to_Make": 63,
+      "Price": 140,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/dal-khichdi.avif",
+      "Description": "Dal Khichdi prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-092",
+      "Item_Name": "Aloo Gobi",
+      "Category": "Main Course",
+      "Cost_to_Make": 50,
+      "Price": 110,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500",
+      "Description": "Aloo Gobi prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-093",
+      "Item_Name": "Chole Paneer",
+      "Category": "Main Course",
+      "Cost_to_Make": 72,
+      "Price": 160,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500",
+      "Description": "Chole Paneer prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-094",
+      "Item_Name": "Matar Paneer",
+      "Category": "Main Course",
+      "Cost_to_Make": 72,
+      "Price": 160,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/matar-paneer.avif",
+      "Description": "Matar Paneer prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-095",
+      "Item_Name": "Butter Paneer Masala",
+      "Category": "Main Course",
+      "Cost_to_Make": 77,
+      "Price": 170,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/butter-paneer-masala.avif",
+      "Description": "Butter Paneer Masala prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-096",
+      "Item_Name": "Kadhai Paneer",
+      "Category": "Main Course",
+      "Cost_to_Make": 81,
+      "Price": 180,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/kadhai-paneer.avif",
+      "Description": "Kadhai Paneer prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-097",
+      "Item_Name": "Shahi Paneer",
+      "Category": "Main Course",
+      "Cost_to_Make": 81,
+      "Price": 180,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/shahi-paneer.avif",
+      "Description": "Shahi Paneer prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-098",
+      "Item_Name": "Palak Paneer",
+      "Category": "Main Course",
+      "Cost_to_Make": 72,
+      "Price": 160,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/palak-paneer.avif",
+      "Description": "Palak Paneer prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-099",
+      "Item_Name": "Hyderabadi Paneer",
+      "Category": "Main Course",
+      "Cost_to_Make": 54,
+      "Price": 120,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500",
+      "Description": "Hyderabadi Paneer prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-100",
+      "Item_Name": "Masala Paneer",
+      "Category": "Main Course",
+      "Cost_to_Make": 81,
+      "Price": 180,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/masala-paneer.avif",
+      "Description": "Masala Paneer prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-101",
+      "Item_Name": "Paneer Do Pyaza",
+      "Category": "Main Course",
+      "Cost_to_Make": 81,
+      "Price": 180,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/paneer-do-pyaza.avif",
+      "Description": "Paneer Do Pyaza prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-102",
+      "Item_Name": "Paneer Kolhapuri",
+      "Category": "Main Course",
+      "Cost_to_Make": 86,
+      "Price": 190,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/paneer-kolhapuri.avif",
+      "Description": "Paneer Kolhapuri prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-103",
+      "Item_Name": "Paneer Chatpata",
+      "Category": "Main Course",
+      "Cost_to_Make": 86,
+      "Price": 190,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/paneer-chatpata.avif",
+      "Description": "Paneer Chatpata prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-104",
+      "Item_Name": "Paneer Muglai",
+      "Category": "Main Course",
+      "Cost_to_Make": 86,
+      "Price": 190,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/paneer-mughlai.avif",
+      "Description": "Paneer Muglai prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-105",
+      "Item_Name": "Paneer Punjabi",
+      "Category": "Main Course",
+      "Cost_to_Make": 86,
+      "Price": 190,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/paneer-punjabi.avif",
+      "Description": "Paneer Punjabi prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-106",
+      "Item_Name": "Mushroom Paneer",
+      "Category": "Main Course",
+      "Cost_to_Make": 86,
+      "Price": 190,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/mushroom-paneer.avif",
+      "Description": "Mushroom Paneer prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-107",
+      "Item_Name": "Paneer Korma",
+      "Category": "Main Course",
+      "Cost_to_Make": 90,
+      "Price": 200,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/paneer-korma.avif",
+      "Description": "Paneer Korma prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-108",
+      "Item_Name": "Paneer Lababdar",
+      "Category": "Main Course",
+      "Cost_to_Make": 90,
+      "Price": 200,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/paneer-lababdar.avif",
+      "Description": "Paneer Lababdar prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-109",
+      "Item_Name": "Paneer Tikka Masala",
+      "Category": "Main Course",
+      "Cost_to_Make": 95,
+      "Price": 210,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/paneer-tikka-masala.avif",
+      "Description": "Paneer Tikka Masala prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-110",
+      "Item_Name": "Paneer Bhurji",
+      "Category": "Main Course",
+      "Cost_to_Make": 95,
+      "Price": 210,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/paneer-bhurji.avif",
+      "Description": "Paneer Bhurji prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-111",
+      "Item_Name": "Kaju Paneer",
+      "Category": "Main Course",
+      "Cost_to_Make": 95,
+      "Price": 210,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/Kaju-paneer.avif",
+      "Description": "Kaju Paneer prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-112",
+      "Item_Name": "Melan Special Paneer",
+      "Category": "Main Course",
+      "Cost_to_Make": 108,
+      "Price": 240,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/Melan-special-paneer.webp",
+      "Description": "Melan Special Paneer prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-113",
+      "Item_Name": "Plain Rice",
+      "Category": "Rice and Biryani",
+      "Cost_to_Make": 36,
+      "Price": 90,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/Plain-rice.avif",
+      "Description": "Plain Rice prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-114",
+      "Item_Name": "Jeera Rice",
+      "Category": "Rice and Biryani",
+      "Cost_to_Make": 40,
+      "Price": 100,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/jeera-rice.avif",
+      "Description": "Jeera Rice prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-115",
+      "Item_Name": "Veg Pulav",
+      "Category": "Rice and Biryani",
+      "Cost_to_Make": 40,
+      "Price": 100,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/pulao.avif",
+      "Description": "Veg Pulav prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-116",
+      "Item_Name": "Dal with Rice",
+      "Category": "Rice and Biryani",
+      "Cost_to_Make": 32,
+      "Price": 80,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500",
+      "Description": "Dal with Rice prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-117",
+      "Item_Name": "Chhole & Rice",
+      "Category": "Rice and Biryani",
+      "Cost_to_Make": 36,
+      "Price": 90,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500",
+      "Description": "Chhole & Rice prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-118",
+      "Item_Name": "Lapeta",
+      "Category": "Rice and Biryani",
+      "Cost_to_Make": 36,
+      "Price": 90,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500",
+      "Description": "Lapeta prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-119",
+      "Item_Name": "Veg Biryani",
+      "Category": "Rice and Biryani",
+      "Cost_to_Make": 50,
+      "Price": 110,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500",
+      "Description": "Veg Biryani prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-120",
+      "Item_Name": "Hyderabadi Briyani",
+      "Category": "Rice and Biryani",
+      "Cost_to_Make": 54,
+      "Price": 120,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500",
+      "Description": "Hyderabadi Briyani prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-121",
+      "Item_Name": "Butter Khichdi",
+      "Category": "Rice and Biryani",
+      "Cost_to_Make": 40,
+      "Price": 100,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/butter-khichdi.avif",
+      "Description": "Butter Khichdi prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-122",
+      "Item_Name": "Tawa Roti",
+      "Category": "Breads",
+      "Cost_to_Make": 2,
+      "Price": 7,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/Tawa-roti.avif",
+      "Description": "Tawa Roti prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-123",
+      "Item_Name": "Tawa Butter Roti",
+      "Category": "Breads",
+      "Cost_to_Make": 3,
+      "Price": 8,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/Tawa-butter-roti.avif",
+      "Description": "Tawa Butter Roti prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-124",
+      "Item_Name": "Tandoori Plain Roti",
+      "Category": "Tandoor Se",
+      "Cost_to_Make": 4,
+      "Price": 10,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500",
+      "Description": "Tandoori Plain Roti prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-125",
+      "Item_Name": "Tandoori Butter Roti",
+      "Category": "Tandoor Se",
+      "Cost_to_Make": 4,
+      "Price": 12,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500",
+      "Description": "Tandoori Butter Roti prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-126",
+      "Item_Name": "Tawa Paratha",
+      "Category": "Breads",
+      "Cost_to_Make": 7,
+      "Price": 20,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500",
+      "Description": "Tawa Paratha prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-127",
+      "Item_Name": "Kulcha",
+      "Category": "Tandoor Se",
+      "Cost_to_Make": 7,
+      "Price": 20,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500",
+      "Description": "Kulcha prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-128",
+      "Item_Name": "Butter Kulcha",
+      "Category": "Tandoor Se",
+      "Cost_to_Make": 11,
+      "Price": 30,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500",
+      "Description": "Butter Kulcha prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-129",
+      "Item_Name": "Laccha Paratha",
+      "Category": "Breads",
+      "Cost_to_Make": 11,
+      "Price": 30,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500",
+      "Description": "Laccha Paratha prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-130",
+      "Item_Name": "Naan",
+      "Category": "Tandoor Se",
+      "Cost_to_Make": 11,
+      "Price": 30,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500",
+      "Description": "Naan prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-131",
+      "Item_Name": "Butter Naan",
+      "Category": "Tandoor Se",
+      "Cost_to_Make": 16,
+      "Price": 40,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500",
+      "Description": "Butter Naan prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-132",
+      "Item_Name": "Garlic Naan",
+      "Category": "Tandoor Se",
+      "Cost_to_Make": 24,
+      "Price": 60,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500",
+      "Description": "Garlic Naan prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-133",
+      "Item_Name": "Aloo Paratha",
+      "Category": "Breads",
+      "Cost_to_Make": 36,
+      "Price": 90,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/Aloo-Paratha.avif",
+      "Description": "Aloo Paratha prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-134",
+      "Item_Name": "Paneer Paratha",
+      "Category": "Breads",
+      "Cost_to_Make": 54,
+      "Price": 120,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/Paneer-paratha.avif",
+      "Description": "Paneer Paratha prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-135",
+      "Item_Name": "Chola Kulcha",
+      "Category": "Combos",
+      "Cost_to_Make": 54,
+      "Price": 120,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500",
+      "Description": "Chola Kulcha prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-136",
+      "Item_Name": "Paneer Kulcha",
+      "Category": "Combos",
+      "Cost_to_Make": 63,
+      "Price": 140,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500",
+      "Description": "Paneer Kulcha prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-137",
+      "Item_Name": "Paneer Masala Kulcha",
+      "Category": "Combos",
+      "Cost_to_Make": 72,
+      "Price": 160,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500",
+      "Description": "Paneer Masala Kulcha prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-138",
+      "Item_Name": "Veg Raita",
+      "Category": "Accompaniments",
+      "Cost_to_Make": 24,
+      "Price": 60,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1571115177098-24ec42ed635d?w=500",
+      "Description": "Veg Raita prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-139",
+      "Item_Name": "Boondi Raita",
+      "Category": "Accompaniments",
+      "Cost_to_Make": 24,
+      "Price": 60,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1571115177098-24ec42ed635d?w=500",
+      "Description": "Boondi Raita prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-140",
+      "Item_Name": "Plain Curd",
+      "Category": "Accompaniments",
+      "Cost_to_Make": 20,
+      "Price": 50,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1571115177098-24ec42ed635d?w=500",
+      "Description": "Plain Curd prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-141",
+      "Item_Name": "Sweet Curd",
+      "Category": "Accompaniments",
+      "Cost_to_Make": 24,
+      "Price": 60,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1571115177098-24ec42ed635d?w=500",
+      "Description": "Sweet Curd prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-142",
+      "Item_Name": "Green Salad",
+      "Category": "Accompaniments",
+      "Cost_to_Make": 20,
+      "Price": 50,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1571115177098-24ec42ed635d?w=500",
+      "Description": "Green Salad prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-143",
+      "Item_Name": "Kachumar Salad",
+      "Category": "Accompaniments",
+      "Cost_to_Make": 24,
+      "Price": 60,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1571115177098-24ec42ed635d?w=500",
+      "Description": "Kachumar Salad prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-144",
+      "Item_Name": "Dried Papad",
+      "Category": "Accompaniments",
+      "Cost_to_Make": 4,
+      "Price": 10,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1571115177098-24ec42ed635d?w=500",
+      "Description": "Dried Papad prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-145",
+      "Item_Name": "Fried Papad",
+      "Category": "Accompaniments",
+      "Cost_to_Make": 7,
+      "Price": 20,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1571115177098-24ec42ed635d?w=500",
+      "Description": "Fried Papad prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-146",
+      "Item_Name": "Masala Papad",
+      "Category": "Accompaniments",
+      "Cost_to_Make": 11,
+      "Price": 30,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1571115177098-24ec42ed635d?w=500",
+      "Description": "Masala Papad prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-147",
+      "Item_Name": "Gulab Jamun",
+      "Category": "Snacks",
+      "Cost_to_Make": 16,
+      "Price": 40,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500",
+      "Description": "Gulab Jamun prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-148",
+      "Item_Name": "Veg Thali",
+      "Category": "Thali",
+      "Cost_to_Make": 32,
+      "Price": 80,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/Veg-thali.avif",
+      "Description": "Veg Thali prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-149",
+      "Item_Name": "Regular Thali",
+      "Category": "Thali",
+      "Cost_to_Make": 40,
+      "Price": 100,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500",
+      "Description": "Regular Thali prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-150",
+      "Item_Name": "Special Thali",
+      "Category": "Thali",
+      "Cost_to_Make": 68,
+      "Price": 150,
+      "Stock_Qty": 50,
+      "Image_URL": "menu-images/Special-thali.avif",
+      "Description": "Special Thali prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-151",
+      "Item_Name": "2 Laccha Paratha With Butter Paneer Masala",
+      "Category": "Combos",
+      "Cost_to_Make": 113,
+      "Price": 250,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500",
+      "Description": "2 Laccha Paratha With Butter Paneer Masala prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-152",
+      "Item_Name": "Idli [2 Pieces] With Sambhar And Nari",
+      "Category": "Combos",
+      "Cost_to_Make": 90,
+      "Price": 200,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500",
+      "Description": "Idli [2 Pieces] With Sambhar And Nari prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    },
+    {
+      "Item_ID": "SM-153",
+      "Item_Name": "Kadai Paneer With 4 Tawa Butter",
+      "Category": "Combos",
+      "Cost_to_Make": 61,
+      "Price": 135,
+      "Stock_Qty": 50,
+      "Image_URL": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500",
+      "Description": "Kadai Paneer With 4 Tawa Butter prepared with authentic ingredients and premium taste.",
+      "Rating": 4.5
+    }
+  ],
+  "raw": [
+    {
+      "Ingredient_ID": "Raw-Paneer",
+      "Ingredient_Name": "Fresh Cottage Cheese (Paneer)",
+      "Stock_Qty": 15,
+      "Unit": "kg",
+      "Cost_per_Unit": 350,
+      "Supplier": "Punjab Dairy Farms",
+      "Alert_Level": 3
+    },
+    {
+      "Ingredient_ID": "Raw-Potatoes",
+      "Ingredient_Name": "Fresh Potatoes (Aloo)",
+      "Stock_Qty": 50,
+      "Unit": "kg",
+      "Cost_per_Unit": 30,
+      "Supplier": "Local Veg Market",
+      "Alert_Level": 10
+    },
+    {
+      "Ingredient_ID": "Raw-Masala",
+      "Ingredient_Name": "Special Dosa & Curry Spices",
+      "Stock_Qty": 8.5,
+      "Unit": "kg",
+      "Cost_per_Unit": 280,
+      "Supplier": "Gourmet Spice Distributors",
+      "Alert_Level": 2
+    },
+    {
+      "Ingredient_ID": "Raw-Cheese",
+      "Ingredient_Name": "Premium Mozzarella & Cheddar Blend",
+      "Stock_Qty": 18,
+      "Unit": "kg",
+      "Cost_per_Unit": 520,
+      "Supplier": "Amul Milk Cooperatives",
+      "Alert_Level": 4
+    },
+    {
+      "Ingredient_ID": "Raw-Flour",
+      "Ingredient_Name": "Wheat Flour & Dosa Batter Rice",
+      "Stock_Qty": 40,
+      "Unit": "kg",
+      "Cost_per_Unit": 55,
+      "Supplier": "Aashirvaad Chakki Mills",
+      "Alert_Level": 8
+    },
+    {
+      "Ingredient_ID": "Raw-Butter",
+      "Ingredient_Name": "Amul Pasteurised Salted Butter",
+      "Stock_Qty": 12,
+      "Unit": "kg",
+      "Cost_per_Unit": 480,
+      "Supplier": "Amul Dairy Farms",
+      "Alert_Level": 2
+    },
+    {
+      "Ingredient_ID": "Raw-Mint",
+      "Ingredient_Name": "Fresh Coriander & Mint (Pudina)",
+      "Stock_Qty": 4,
+      "Unit": "kg",
+      "Cost_per_Unit": 90,
+      "Supplier": "Local Vegetable Mandi",
+      "Alert_Level": 1
+    }
+  ],
+  "orders": [
+    {
+      "Order_ID": "TX-9001",
+      "Table_No": 2,
+      "Timestamp": "2026-05-20T12:00:00Z",
+      "Date": "2026-05-20",
+      "Month_No": 5,
+      "Month": "May",
+      "Items_Ordered": [
+        "Melan Special Dosa",
+        "Tea"
+      ],
+      "Quantities": [
+        1,
+        1
+      ],
+      "Subtotal": 140,
+      "Tax": 14,
+      "Total_Revenue": 154
+    },
+    {
+      "Order_ID": "TX-9002",
+      "Table_No": 5,
+      "Timestamp": "2026-05-20T13:30:00Z",
+      "Date": "2026-05-20",
+      "Month_No": 5,
+      "Month": "May",
+      "Items_Ordered": [
+        "Butter Paneer Masala",
+        "Tawa Butter Roti",
+        "Butter Milk"
+      ],
+      "Quantities": [
+        1,
+        2,
+        1
+      ],
+      "Subtotal": 216,
+      "Tax": 21.6,
+      "Total_Revenue": 237.6
+    },
+    {
+      "Order_ID": "TX-9003",
+      "Table_No": 1,
+      "Timestamp": "2026-05-21T20:10:00Z",
+      "Date": "2026-05-21",
+      "Month_No": 5,
+      "Month": "May",
+      "Items_Ordered": [
+        "Veg Cheese Sandwich",
+        "Cold Coffee"
+      ],
+      "Quantities": [
+        2,
+        1
+      ],
+      "Subtotal": 190,
+      "Tax": 19,
+      "Total_Revenue": 209
+    },
+    {
+      "Order_ID": "TX-9004",
+      "Table_No": 8,
+      "Timestamp": "2026-05-22T14:15:00Z",
+      "Date": "2026-05-22",
+      "Month_No": 5,
+      "Month": "May",
+      "Items_Ordered": [
+        "Veg Noodles",
+        "Veg Fried Rice"
+      ],
+      "Quantities": [
+        1,
+        1
+      ],
+      "Subtotal": 170,
+      "Tax": 17,
+      "Total_Revenue": 187
+    },
+    {
+      "Order_ID": "TX-9005",
+      "Table_No": 4,
+      "Timestamp": "2026-05-23T13:00:00Z",
+      "Date": "2026-05-23",
+      "Month_No": 5,
+      "Month": "May",
+      "Items_Ordered": [
+        "Chole Bhature",
+        "Tea"
+      ],
+      "Quantities": [
+        1,
+        1
+      ],
+      "Subtotal": 120,
+      "Tax": 12,
+      "Total_Revenue": 132
+    },
+    {
+      "Order_ID": "TX-9006",
+      "Table_No": 9,
+      "Timestamp": "2026-05-24T19:40:00Z",
+      "Date": "2026-05-24",
+      "Month_No": 5,
+      "Month": "May",
+      "Items_Ordered": [
+        "Masala Dosa",
+        "Butter Milk"
+      ],
+      "Quantities": [
+        1,
+        2
+      ],
+      "Subtotal": 120,
+      "Tax": 12,
+      "Total_Revenue": 132
+    },
+    {
+      "Order_ID": "TX-9007",
+      "Table_No": 3,
+      "Timestamp": "2026-05-25T12:50:00Z",
+      "Date": "2026-05-25",
+      "Month_No": 5,
+      "Month": "May",
+      "Items_Ordered": [
+        "Special Thali",
+        "Mineral Water"
+      ],
+      "Quantities": [
+        2,
+        2
+      ],
+      "Subtotal": 340,
+      "Tax": 34,
+      "Total_Revenue": 374
+    },
+    {
+      "Order_ID": "TX-9008",
+      "Table_No": 11,
+      "Timestamp": "2026-05-26T20:30:00Z",
+      "Date": "2026-05-26",
+      "Month_No": 5,
+      "Month": "May",
+      "Items_Ordered": [
+        "Gulab Jamun",
+        "Tea"
+      ],
+      "Quantities": [
+        1,
+        1
+      ],
+      "Subtotal": 60,
+      "Tax": 6,
+      "Total_Revenue": 66
+    },
+    {
+      "Order_ID": "TX-9009",
+      "Table_No": 12,
+      "Timestamp": "2026-05-27T13:15:00Z",
+      "Date": "2026-05-27",
+      "Month_No": 5,
+      "Month": "May",
+      "Items_Ordered": [
+        "Paneer Masala Dosa",
+        "Butter Milk"
+      ],
+      "Quantities": [
+        1,
+        1
+      ],
+      "Subtotal": 120,
+      "Tax": 12,
+      "Total_Revenue": 132
+    },
+    {
+      "Order_ID": "TX-9010",
+      "Table_No": 6,
+      "Timestamp": "2026-05-28T19:00:00Z",
+      "Date": "2026-05-28",
+      "Month_No": 5,
+      "Month": "May",
+      "Items_Ordered": [
+        "Dal Fry",
+        "Jeera Rice"
+      ],
+      "Quantities": [
+        1,
+        1
+      ],
+      "Subtotal": 190,
+      "Tax": 19,
+      "Total_Revenue": 209
+    }
+  ]
+}

@@ -1,0 +1,442 @@
+// ShriMelan — Production Data Model (PostgreSQL + Prisma)
+// Real relational tables — no whole-array/state sync (unlike the legacy project).
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ---------------------------------------------------------------------------
+// ENUMS
+// ---------------------------------------------------------------------------
+
+// ADMIN is the only operational staff role. The legacy migration history keeps
+// its original enum values only so existing databases can be upgraded safely.
+enum StaffRole {
+  ADMIN
+}
+
+enum OrderType {
+  DINE_IN
+  PICKUP
+  DELIVERY
+}
+
+// Independent of OrderStatus. UNPAID until an ADMIN records counter payment.
+enum PaymentStatus {
+  UNPAID
+  PAID
+}
+
+// How the customer paid at the counter. Recorded only by ADMIN, only after
+// the fact — there is no online payment gateway anywhere in this system.
+enum PaymentMethod {
+  CASH
+  UPI
+  CARD
+}
+
+// Where the order originated. QR = scanned a table QR (dine-in via table
+// session). WEBSITE = placed from the public site without a table session
+// (pickup/delivery). ADMIN = entered on the customer's behalf by staff.
+enum OrderSource {
+  QR
+  WEBSITE
+  ADMIN
+}
+
+enum OrderStatus {
+  RECEIVED
+  CONFIRMED
+  PREPARING
+  READY
+  COMPLETED
+  CANCELLED
+}
+
+// ---------------------------------------------------------------------------
+// CUSTOMERS (lightweight — most orders are guest checkouts identified by phone)
+// ---------------------------------------------------------------------------
+model User {
+  id        String            @id @default(uuid())
+  name      String
+  phone     String            @unique
+  email     String?
+  createdAt DateTime          @default(now())
+  addresses CustomerAddress[]
+  orders    Order[]
+  carts     Cart[]
+}
+
+model CustomerAddress {
+  id          String   @id @default(uuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id])
+  label       String? // "Home", "Office"
+  addressLine String
+  landmark    String?
+  createdAt   DateTime @default(now())
+}
+
+// ---------------------------------------------------------------------------
+// STAFF / RBAC — ADMIN is the only authenticated operational user.
+// ---------------------------------------------------------------------------
+model Staff {
+  id           String    @id @default(uuid())
+  name         String
+  email        String    @unique
+  passwordHash String
+  role         StaffRole @default(ADMIN)
+  branchId     String
+  branch       Branch    @relation(fields: [branchId], references: [id])
+  active       Boolean   @default(true)
+  createdAt    DateTime  @default(now())
+
+  // Bumped on every logout (and can be bumped manually to force-revoke all
+  // outstanding sessions, e.g. after a suspected compromise). The JWT embeds
+  // the sessionVersion it was issued with; a mismatch means the token was
+  // logged out and is rejected even though it hasn't expired yet.
+  sessionVersion Int @default(0)
+
+  // Account-aware brute-force protection, on top of the IP-based rate
+  // limiter in server.ts.
+  failedLoginAttempts Int       @default(0)
+  lockedUntil         DateTime?
+  lastLoginAt         DateTime?
+
+  sessions      AdminSession[]
+  statusChanges OrderStatusHistory[]
+  auditLogs     AuditLog[]
+  paidOrders    Order[]              @relation("OrderPaidBy")
+
+  @@index([branchId])
+}
+
+model AdminSession {
+  id         String    @id @default(uuid())
+  staffId    String
+  staff      Staff     @relation(fields: [staffId], references: [id], onDelete: Cascade)
+  tokenHash  String    @unique
+  createdAt  DateTime  @default(now())
+  expiresAt  DateTime
+  lastSeenAt DateTime  @default(now())
+  revokedAt  DateTime?
+  userAgent  String?
+  ipAddress  String?
+
+  @@index([staffId, revokedAt])
+  @@index([expiresAt])
+}
+
+// ---------------------------------------------------------------------------
+// RESTAURANT / BRANCH / TABLES
+// ---------------------------------------------------------------------------
+model Branch {
+  id            String            @id @default(uuid())
+  name          String            @default("ShriMelan — BHEL, Bhopal")
+  address       String
+  phone         String
+  whatsapp      String
+  email         String
+  openTime      String // "11:00"
+  closeTime     String // "23:00"
+  staff         Staff[]
+  tables        RestaurantTable[]
+  categories    MenuCategory[]
+  orders        Order[]
+  tableSessions TableSession[]
+  auditLogs     AuditLog[]
+}
+
+model RestaurantTable {
+  id       String @id @default(uuid())
+  branchId String
+  branch   Branch @relation(fields: [branchId], references: [id])
+  label    String // "Table 7"
+
+  // The raw QR token (>=32 random bytes, base64url) is generated at
+  // creation/regeneration time and shown to the admin exactly once (for
+  // printing). Only its SHA-256 hash is ever stored. The printed QR encodes
+  // "/order?t=<rawToken>"; the server looks up qrTokenHash, never a raw
+  // table id. Regenerating rotates qrTokenHash, which invalidates every
+  // previously printed QR for this table immediately.
+  qrTokenHash String  @unique
+  qrVersion   Int     @default(1) // bumped on every regeneration, for audit trails
+  active      Boolean @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  orders   Order[]
+  sessions TableSession[]
+
+  @@index([branchId])
+}
+
+// ---------------------------------------------------------------------------
+// TABLE SESSIONS — QR → Table → TableSession → Order.
+// A customer order's table is resolved from a validated, unexpired
+// TableSession; the client never supplies an authoritative tableId.
+// ---------------------------------------------------------------------------
+model TableSession {
+  id       String          @id @default(uuid())
+  tableId  String
+  table    RestaurantTable @relation(fields: [tableId], references: [id])
+  branchId String
+  branch   Branch          @relation(fields: [branchId], references: [id])
+
+  // Opaque random session token handed to the customer as an HttpOnly
+  // cookie; only its hash is stored.
+  sessionTokenHash String    @unique
+  qrVersion        Int // the RestaurantTable.qrVersion this session was minted against
+  createdAt        DateTime  @default(now())
+  expiresAt        DateTime // short-lived; re-scanning issues a fresh session
+  revokedAt        DateTime? // set if table is deactivated or QR regenerated mid-session
+  lastSeenAt       DateTime  @default(now())
+
+  orders Order[]
+
+  @@index([tableId])
+  @@index([branchId])
+  @@index([expiresAt])
+}
+
+// ---------------------------------------------------------------------------
+// MENU
+// ---------------------------------------------------------------------------
+model MenuCategory {
+  id        String     @id @default(uuid())
+  branchId  String
+  branch    Branch     @relation(fields: [branchId], references: [id])
+  name      String // "South Indian", "Main Course", ...
+  sortOrder Int        @default(0)
+  items     MenuItem[]
+}
+
+model MenuItem {
+  id           String       @id @default(uuid())
+  categoryId   String
+  category     MenuCategory @relation(fields: [categoryId], references: [id])
+  itemCode     String       @unique // "SM-001" — human readable, from legacy catalogue
+  name         String
+  description  String
+  price        Decimal      @db.Decimal(10, 2) // customer-facing price (public)
+  costToMake   Decimal?     @db.Decimal(10, 2) // INTERNAL ONLY — never serialized to public API
+  isVeg        Boolean      @default(true)
+  rating       Decimal      @default(4.5) @db.Decimal(2, 1)
+  imageUrl     String
+  isBestseller Boolean      @default(false)
+  isAvailable  Boolean      @default(true) // toggled from staff menu-management UI
+  stockQty     Int? // INTERNAL ONLY — drives isAvailable, not exposed directly
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+
+  variants   ItemVariant[]
+  addons     ItemAddon[]
+  cartItems  CartItem[]
+  orderItems OrderItem[]
+}
+
+// e.g. Half / Full, Regular / Large
+model ItemVariant {
+  id         String   @id @default(uuid())
+  itemId     String
+  item       MenuItem @relation(fields: [itemId], references: [id])
+  name       String
+  priceDelta Decimal  @default(0) @db.Decimal(10, 2)
+
+  cartItems  CartItem[]
+  orderItems OrderItem[]
+}
+
+// e.g. Extra Paneer, Extra Cheese
+model ItemAddon {
+  id       String   @id @default(uuid())
+  itemId   String
+  item     MenuItem @relation(fields: [itemId], references: [id])
+  name     String
+  price    Decimal  @default(0) @db.Decimal(10, 2)
+  isActive Boolean  @default(true)
+}
+
+// ---------------------------------------------------------------------------
+// CART (pre-order, mutable; converted to Order at checkout)
+// ---------------------------------------------------------------------------
+model Cart {
+  id         String     @id @default(uuid())
+  userId     String?
+  user       User?      @relation(fields: [userId], references: [id])
+  sessionKey String     @unique // anonymous cart identifier (HttpOnly cookie session id)
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @updatedAt
+  items      CartItem[]
+}
+
+model CartItem {
+  id     String @id @default(uuid())
+  cartId String
+  cart   Cart   @relation(fields: [cartId], references: [id])
+
+  itemId String
+  item   MenuItem @relation(fields: [itemId], references: [id])
+
+  variantId String?
+  variant   ItemVariant? @relation(fields: [variantId], references: [id])
+
+  quantity     Int      @default(1)
+  addonIds     String[]
+  instructions String?
+}
+
+// ---------------------------------------------------------------------------
+// ORDERS
+// ---------------------------------------------------------------------------
+model Order {
+  id            String  @id @default(uuid())
+  orderNumber   String  @unique // human-readable "SM-20260905-1234", generated server-side
+  branchId      String
+  branch        Branch  @relation(fields: [branchId], references: [id])
+  userId        String?
+  user          User?   @relation(fields: [userId], references: [id])
+  customerName  String
+  customerPhone String
+
+  orderType   OrderType
+  orderSource OrderSource // QR | WEBSITE | ADMIN — every order records how it was placed
+
+  // The table is resolved from a validated TableSession server-side; it is
+  // never taken from a client-supplied tableId. tableSessionId is kept for
+  // audit/traceability even after the session itself expires.
+  tableId          String?
+  table            RestaurantTable? @relation(fields: [tableId], references: [id])
+  tableSessionId   String?
+  tableSession     TableSession?    @relation(fields: [tableSessionId], references: [id])
+  deliveryAddress  String?
+  deliveryLandmark String?
+  note             String?
+
+  subtotal Decimal @db.Decimal(10, 2) // computed server-side
+  tax      Decimal @db.Decimal(10, 2) // computed server-side
+  total    Decimal @db.Decimal(10, 2) // computed server-side
+
+  status        OrderStatus    @default(RECEIVED)
+  paymentStatus PaymentStatus  @default(UNPAID)
+  paymentMethod PaymentMethod? // set only when paymentStatus flips to PAID
+  paidAt        DateTime?
+  paidById      String? // Staff.id of the ADMIN who recorded counter payment
+  paidBy        Staff?         @relation("OrderPaidBy", fields: [paidById], references: [id])
+
+  // Opaque random per-order access token (hash only, never the raw value)
+  // so a customer can look up only their own order without relying solely
+  // on orderNumber+phone.
+  accessTokenHash String @unique
+
+  // SHA-256 of the Idempotency-Key header, scoped to the table session.
+  // The raw client key is never stored.
+  idempotencyKey   String?
+  idempotencyScope String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  items         OrderItem[]
+  statusHistory OrderStatusHistory[]
+  notifications Notification[]
+
+  @@unique([idempotencyScope, idempotencyKey])
+  @@index([branchId, status])
+  @@index([orderSource])
+  @@index([paymentStatus])
+  @@index([tableId])
+}
+
+model OrderItem {
+  id String @id @default(uuid())
+
+  orderId String
+  order   Order  @relation(fields: [orderId], references: [id])
+
+  itemId String
+  item   MenuItem @relation(fields: [itemId], references: [id])
+
+  variantId String?
+  variant   ItemVariant? @relation(fields: [variantId], references: [id])
+
+  itemNameSnap    String
+  variantNameSnap String?
+  unitPriceSnap   Decimal @db.Decimal(10, 2)
+  quantity        Int
+  addonsSnap      Json?
+  instructions    String?
+}
+
+model OrderStatusHistory {
+  id          String      @id @default(uuid())
+  orderId     String
+  order       Order       @relation(fields: [orderId], references: [id])
+  status      OrderStatus
+  changedById String?
+  changedBy   Staff?      @relation(fields: [changedById], references: [id])
+  changedAt   DateTime    @default(now())
+}
+
+// ---------------------------------------------------------------------------
+// NOTIFICATIONS (BullMQ-backed background jobs)
+// ---------------------------------------------------------------------------
+model Notification {
+  id        String   @id @default(uuid())
+  orderId   String?
+  order     Order?   @relation(fields: [orderId], references: [id])
+  channel   String // "sms" | "socket" | "email"
+  payload   Json
+  status    String   @default("queued") // queued | sent | failed
+  createdAt DateTime @default(now())
+}
+
+// ---------------------------------------------------------------------------
+// AUDIT LOG (every privileged / security-relevant / business-relevant action)
+//
+// Written exclusively through src/services/audit.service.ts, which owns the
+// fixed catalogue of `action` values and strips anything that looks like a
+// secret out of `metadata` before it ever reaches this table. Never insert
+// into this model directly from a route — see that file for why.
+// ---------------------------------------------------------------------------
+model AuditLog {
+  id     String  @id @default(uuid())
+  // The staff member who performed the action. Null for actions with no
+  // authenticated staff actor (e.g. a customer placing an order from a
+  // table QR, or a failed login for an email that isn't associated with any
+  // account is simply never logged rather than pinned to a guess).
+  staffId String?
+  staff   Staff?  @relation(fields: [staffId], references: [id])
+
+  action String // Fixed catalogue — see AuditAction in audit.service.ts.
+
+  targetType String? // "Order" | "Staff" | "AdminSession" | "MenuCategory" | "MenuItem" | "RestaurantTable"
+  targetId   String?
+
+  // The branch the action relates to, for per-branch filtering once the
+  // system supports more than one. Nullable because a small number of
+  // actions (e.g. a login attempt for an unknown email) have no branch to
+  // attach.
+  branchId String?
+  branch   Branch? @relation(fields: [branchId], references: [id])
+
+  // Free-form but sanitized: audit.service.ts recursively strips any key
+  // that looks like a credential/token/secret before this is written, so
+  // this column must never be trusted as a substitute for that check when
+  // reading — it's a backstop, not the primary control.
+  metadata  Json?
+  ipAddress String?
+  createdAt DateTime @default(now())
+
+  @@index([staffId])
+  @@index([action])
+  @@index([targetType, targetId])
+  @@index([branchId])
+  @@index([createdAt])
+}
